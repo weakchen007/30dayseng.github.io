@@ -58,7 +58,7 @@ B: I will. Bye.
 喂，布赖特在吗？
 
 ### 2、常用词和词组
-|英文|中文|英文|中文|
+|电话常用单词|
 |---------|--------|--------|----------|
 |dial phone|拨盘式电话|push button phone|按键式电话|
 |coin slot|投币口|telephone booth|公用电话亭|
