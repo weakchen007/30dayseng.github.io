@@ -1,0 +1,72 @@
+# 第二天 英语会话基本用语二
+
+## 一、介绍用语（Introducings）
+
+1、Mr. Green, this is Mr. Brown. 格林先生，这是布朗先生。
+2、How do you do? 你好！
+3、I’m glad to see you. 很高兴见到你。
+4、I’ve heard a lot about you from Mr. Hill. 从希尔先生处得知你的很多事。
+5、Mr. Jones, I presume. 我想，你是琼斯先生吧。
+6、My name is Wang Tao. 我叫王涛。
+7、I’d like you to meet Mr. Brown. 我想让你见见布朗先生。
+8、Nice to meet you. 很高兴碰到你！
+9、Mr. Watson, may I introduce you to Mr. James?华生先生，我可以把詹姆斯先生介绍给你吗？
+10、It is with great pleasure that I introduce to you Mr. James.我很荣幸地把詹姆斯先生介绍给你。
+
+## 二、致谢用语(Thanks)
+
+1、Thank you. 谢谢。
+2、Thank you very much. 非常感谢。
+3、Thanks a lot. 十分感谢。
+4、It’s very kind of you. 你真好。
+5、I’m much obliged. 我非常感谢。
+6、Many thanks. 多谢。
+7、Many thanks for your coming here. 多谢你的光临。
+8、Much appreciated. 非常感谢。
+9、Not at all. 没什么。
+10、You are welcome. 不客气。
+11、That’s all right. 请勿介意。
+12、At your service. 愿为你效劳。
+13、It’s a pleasure. 我很乐意。
+14、No bother at all. 不费事。
+15、No trouble at all. 没什么。
+16、Please don’t mention it. 请不要客气。
+17、It was the least I could do. 这实在微不足道，不过尽力而已。
+
+## 三、道歉用语（Apologies）
+
+1、I’m sorry. 对不起。
+2、 beg your pardon. 请你原谅。
+3、Please forgive me. 请原谅我。
+4、Excuse me. 原谅我。
+5、Excuse me, but… 对不起…
+6、I’m awfully sorry. 很对不起。
+7、I’m very sorry for what I’ve said to you. 对我说过的话我感到抱歉。
+8、It was wrong of me. 我的错。
+9、Oh, that’s all right. 哦，不要紧。
+10、Don’t worry about that. 不要再想那事了。
+11、Oh, never mind. 哦，没关系。
+12、Don’t let it worry you. 不要再想那事了。
+13、I quite understand. 我很理解。
+14、It doesn’t matter at all. 一点没关系。
+15、It’s not your fault. 不是你的错。
+16、Let’s forget it. 不要放在心上了。
+17、No harm. 不碍事，没关系。
+
+## 四、请求用语（Request）
+
+1、May I ask a favor of you? 请你帮我个忙行吗？
+2、Will you please open the window? 请你打开窗户好吗？
+3、Would you kindly help me with this work? 请帮我做这事好吗？
+4、Would you mind shutting the window? 请您关上窗户好吗？
+5、May I borrow this book? 我可以借这本书吗？
+6、Please come here. 请来这里。
+7、Come here, please. 请来这里。
+8、Can you give me a lift? 我能搭车吗？
+9、Could I ask you to write a letter to him? 您可以给他写封信吗？
+10、Do you mind if I get a lift in your car, please?如果我搭你的车，你不反对吧？
+11、I’d like some cigarettes, please. 对不起，我想要些香烟。
+12、Would you do me a good thing? 请为我做这件事行吗？
+13、Would you like to turn off the radio, please? 请关掉收音机好吗？
+14、I’d be very grateful if you’d get me up at 6:30 tomorrow.如果你在明天六点半叫醒我，我将非常感谢。
+
