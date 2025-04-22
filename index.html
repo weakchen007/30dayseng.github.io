@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>三十天学英语</title>
-    <!-- TailwindCSS via CDN -->
+    <!-- Added Meta Description for better previews -->
+    <meta name="description" content="一个三十天学英语的挑战，以最简单的方式提高英文能力。 每天跟踪进展和访问学习材料。">
+        <!-- TailwindCSS via CDN -->
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <!-- Marked.js via CDN (Markdown to HTML converter) -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -106,7 +108,7 @@
 
             } catch (error) {
                 console.error('Error loading day content:', error);
-                contentArea.innerHTML = `<p class="text-red-600 font-semibold">Error loading content for Day ${day}.</p><p class="text-gray-500 text-sm">${error.message}</p><p class="mt-4">Please ensure the file <code>${filePath}</code> exists in your repository's <code>/days/</code> folder.</p>`;
+                contentArea.innerHTML = `<p class="</p><p class="text-gray-500 text-sm">${error.message}</p><p class="mt-4">Please ensure the file <code>${filePath}</code> exists in your repository's <code>/days/</code> folder.</p>`;
             } finally {
                  loadingIndicator.style.display = 'none'; // Hide loading indicator
                  contentArea.style.display = 'block'; // Show content area
