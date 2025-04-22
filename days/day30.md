@@ -31,31 +31,20 @@ B: I will. Bye.
 
 ### 1、句子
 
-(1) Can you contact me with London, please?
-请给我接伦敦好吗？
-(2) Can you put me through to 23547?
-给我接23457可以吗？
-(3) Central! I’ve been cut off.
-总机！我的电话断了。
-(4) Connect me with Queen Hotel. Please.
-请给我接皇后旅馆。
-(5) Could I have extension 564?
-给我接分机564好吗？
-(6) A minute, please. I’ll connect you.
-请稍等片刻。我将给你接通。
-(7) I’m sorry the number’s engaged. Will you hold?
-对不起，这个电话友人在打，您等一下好吗？
-(8) Just a minute. I’ll get the number through.
-等一下，我给您接通。
-(9) Number, please.
-请报一下电话号码。
+(1) Can you contact me with London, please?请给我接伦敦好吗？
+(2) Can you put me through to 23547?给我接23457可以吗？
+(3) Central! I’ve been cut off.总机！我的电话断了。
+(4) Connect me with Queen Hotel. Please.请给我接皇后旅馆。
+(5) Could I have extension 564?给我接分机564好吗？
+(6) A minute, please. I’ll connect you.请稍等片刻。我将给你接通。
+(7) I’m sorry the number’s engaged. Will you hold?对不起，这个电话友人在打，您等一下好吗？
+(8) Just a minute. I’ll get the number through.等一下，我给您接通。
+(9) Number, please.请报一下电话号码。
 (10) The line is busy. 占线。
 (11) The line’s through now. 电话现在接通了。
 (12) Where’re you calling from? 您从哪儿打来的？
-(13) Who do you want to speak to?
-您要同谁讲话？
-(14) Hello, Is Bright in?
-喂，布赖特在吗？
+(13) Who do you want to speak to?您要同谁讲话？
+(14) Hello, Is Bright in?喂，布赖特在吗？
 
 ### 2、常用词和词组
 |英文|中文|英文|中文|
