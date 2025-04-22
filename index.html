@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三十天学英语</title>
+    <!-- TailwindCSS via CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <!-- Marked.js via CDN (Markdown to HTML converter) -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        /* Add minor custom styles if needed, but Tailwind should cover most */
+        #content-area :where(h1,h2,h3,h4,h5,h6) {
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+        }
+         #content-area :where(p) {
+            margin-bottom: 0.8em;
+        }
+        #content-area :where(ul, ol) {
+            margin-left: 1.5em;
+             margin-bottom: 0.8em;
+        }
+         #content-area :where(li) {
+            margin-bottom: 0.3em;
+        }
+        .day-button.active {
+             background-color: #2563eb; /* Example: darker blue for active */
+             border: 2px solid #1e40af;
+        }
+         #loading-indicator {
+            display: none; /* Hidden by default */
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+            color: #6b7280; /* gray-500 */
+         }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 text-gray-800 font-sans min-h-screen flex flex-col">
+
+    <header class="bg-white shadow-md py-4">
+        <h1 class="text-3xl md:text-4xl font-bold text-center text-indigo-700">
+            30-Day English Learning Challenge
+        </h1>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 flex-grow">
+        
+        <!-- Day Selector -->
+        <section aria-labelledby="day-select-heading">
+            <h2 id="day-select-heading" class="text-xl font-semibold mb-4 text-center text-gray-700">选择学习哪一天:</h2>
+            <div id="day-selector" class="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-10 lg:grid-cols-15 gap-2 mb-8 justify-center">
+                <!-- Day buttons will be generated here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Content Display Area -->
+        <section aria-live="polite">
+            <div id="loading-indicator">Loading content...</div>
+            <div id="content-area" class="prose max-w-none bg-white p-6 rounded-lg shadow-lg min-h-[200px]">
+                <!-- Default message -->
+                <p class="text-gray-600">在上面选择你要学习的内容，如果打开有报错或无法打开的情况，那一定是还没有上传对应的内容，请耐心等待。</p>
+                <!-- Markdown content will be loaded here -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-4 mt-8 text-gray-600 text-sm bg-white/50">
+        Created for the 30-Day Challenge | Powered by GitHub Pages, TailwindCSS, and Marked.js
+    </footer>
+
+    <script>
+        const daySelector = document.getElementById('day-selector');
+        const contentArea = document.getElementById('content-area');
+        const loadingIndicator = document.getElementById('loading-indicator');
+        const totalDays = 30;
+        let activeButton = null; // Keep track of the currently active button
+
+        // --- Function to fetch and display Markdown content ---
+        async function loadDayContent(day) {
+            const filePath = `days/day${day}.md`;
+            contentArea.innerHTML = ''; // Clear previous content
+            contentArea.style.display = 'none';
+            loadingIndicator.style.display = 'block'; // Show loading indicator
+
+            try {
+                const response = await fetch(filePath);
+
+                if (!response.ok) {
+                    throw new Error(`Could not fetch ${filePath}. Status: ${response.status}. Make sure the file exists.`);
+                }
+
+                const markdownText = await response.text();
+
+                // Use Marked.js to convert Markdown to HTML
+                // Enable GitHub Flavored Markdown (GFM) and breaks for better compatibility
+                marked.setOptions({
+                  gfm: true,
+                  breaks: true,
+                });
+                const htmlContent = marked.parse(markdownText);
+
+                contentArea.innerHTML = htmlContent;
+
+            } catch (error) {
+                console.error('Error loading day content:', error);
+                contentArea.innerHTML = `<p class="text-red-600 font-semibold">Error loading content for Day ${day}.</p><p class="text-gray-500 text-sm">${error.message}</p><p class="mt-4">Please ensure the file <code>${filePath}</code> exists in your repository's <code>/days/</code> folder.</p>`;
+            } finally {
+                 loadingIndicator.style.display = 'none'; // Hide loading indicator
+                 contentArea.style.display = 'block'; // Show content area
+            }
+        }
+
+        // --- Generate Day Buttons ---
+        for (let i = 1; i <= totalDays; i++) {
+            const button = document.createElement('button');
+            button.innerText = i;
+            button.dataset.day = i; // Store the day number in a data attribute
+            button.className = 'day-button bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-2 rounded text-center cursor-pointer transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500';
+            button.setAttribute('aria-label', `Load content for Day ${i}`);
+
+            button.addEventListener('click', (event) => {
+                const selectedDay = event.target.dataset.day;
+                
+                // Remove active class from the previously active button
+                if (activeButton) {
+                    activeButton.classList.remove('active', 'bg-blue-700'); // Use a specific active color or style
+                     activeButton.classList.add('bg-indigo-500'); // Restore default bg
+                }
+                 // Add active class to the clicked button
+                event.target.classList.add('active', 'bg-blue-700'); // Example active style
+                event.target.classList.remove('bg-indigo-500'); // Remove default bg
+                activeButton = event.target; // Update the reference to the active button
+
+                loadDayContent(selectedDay);
+            });
+
+            daySelector.appendChild(button);
+        }
+
+        // Optional: Automatically load Day 1 on page load if day1.md exists
+        // Uncomment the line below if you want this behavior
+        // document.addEventListener('DOMContentLoaded', () => loadDayContent(1));
+
+    </script>
+
+</body>
+</html>
