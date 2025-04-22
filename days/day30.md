@@ -58,8 +58,18 @@ B: I will. Bye.
 喂，布赖特在吗？
 
 ### 2、常用词和词组
-|dial phone|拨盘式电话|push button phone|按键式电话|
+|英文|中文|英文|中文|
 |---------|--------|--------|----------|
+|dial phone|拨盘式电话|push button phone|按键式电话|
 |coin slot|投币口|telephone booth|公用电话亭|
 |operator|接线员|area code|地区编号|
 |telephone number|电话号码|extension|分机|
+|pay telephone(public telephone)|(电话)付钱电话|Information(Directory Assistance)|电话问讯台|
+|telephone directory|电话簿|long distance call|长途电话|
+|station to station call|叫号电话|person to person call|叫人电话|
+|collect call|受话者付费电话|overseas call|国际长途电话|
+|to be cut off|被切断|number|电话号码|
+|to connect|接|switch board|交换台|
+|to hang up|挂(电话)|to hold on|不要放下(电话)|
+|to dial|拨号|to call back|回电话|
+|to leave a message|留口信|mobile and marine call|流动与海上电话|
