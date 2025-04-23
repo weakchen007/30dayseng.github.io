@@ -7,9 +7,25 @@
   你的浏览器不支持音频播放。
 </audio>
 2、Pardon me. 对不起
+<audio controls>
+  <source src=\"assets/audio/002.mp3\" type=\"audio/mpeg\">
+  你的浏览器不支持音频播放。
+</audio>
 3、I say! Say! 喂！
+<audio controls>
+  <source src=\"assets/audio/003.mp3\" type=\"audio/mpeg\">
+  你的浏览器不支持音频播放。
+</audio>
 4、Hello! Hi! 喂！（哈罗！）
+<audio controls>
+  <source src=\"assets/audio/004.mp3\" type=\"audio/mpeg\">
+  你的浏览器不支持音频播放。
+</audio>
 5、Hey! 喂！
+<audio controls>
+  <source src=\"assets/audio/005.mp3\" type=\"audio/mpeg\">
+  你的浏览器不支持音频播放。
+</audio>
 
 ## 二、见面时的用语（Greetings）
 1、Good morning! 早安！（上午用）
