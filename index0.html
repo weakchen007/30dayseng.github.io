@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三十天学英语</title>
+    <!-- Added Meta Description for better previews -->
+    <meta name="description" content="一个三十天学英语的挑战，以最简单的方式提高英文能力。 每天跟踪进展和访问学习材料。">
+    <!-- TailwindCSS via CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <!-- Marked.js via CDN (Markdown to HTML converter) -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Font Awesome for theme toggle icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Theme variables */
+        :root {
+            --bg-gradient-from: #EBF5FF;
+            --bg-gradient-to: #E8E8FC;
+            --text-color: #1F2937;
+            --header-bg: #FFFFFF;
+            --header-text: #4338CA;
+            --content-bg: #FFFFFF;
+            --footer-bg: rgba(255, 255, 255, 0.5);
+            --button-bg: #6366F1;
+            --button-hover: #4F46E5;
+            --button-active: #2563EB;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+        
+        html.dark {
+            --bg-gradient-from: #111827;
+            --bg-gradient-to: #1E293B;
+            --text-color: #E5E7EB;
+            --header-bg: #1F2937;
+            --header-text: #A5B4FC;
+            --content-bg: #374151;
+            --footer-bg: rgba(31, 41, 55, 0.5);
+            --button-bg: #4F46E5;
+            --button-hover: #4338CA;
+            --button-active: #3730A3;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+        }
+        
+        body {
+            background: linear-gradient(to bottom right, var(--bg-gradient-from), var(--bg-gradient-to));
+            color: var(--text-color);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        
+        header {
+            background-color: var(--header-bg);
+            box-shadow: 0 4px 6px var(--shadow-color);
+            transition: background-color 0.3s ease;
+        }
+        
+        header h1 {
+            color: var(--header-text);
+            transition: color 0.3s ease;
+        }
+        
+        #content-area {
+            background-color: var(--content-bg);
+            box-shadow: 0 10px 15px var(--shadow-color);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            color: var(--text-color);
+        }
+        
+        .day-button {
+            background-color: var(--button-bg);
+            transition: background-color 0.3s ease;
+        }
+        
+        .day-button:hover {
+            background-color: var(--button-hover);
+        }
+        
+        .day-button.active {
+            background-color: var(--button-active);
+            border: 2px solid var(--button-hover);
+        }
+        
+        footer {
+            background-color: var(--footer-bg);
+            transition: background-color 0.3s ease;
+        }
+        
+        /* Theme toggle button */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: var(--button-bg);
+            color: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .theme-toggle:hover {
+            background-color: var(--button-hover);
+            transform: rotate(30deg);
+        }
+        
+        /* Original styles */
+        #content-area :where(h1,h2,h3,h4,h5,h6) {
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+        }
+        
+        #content-area :where(p) {
+            margin-bottom: 0.8em;
+        }
+        
+        #content-area :where(ul, ol) {
+            margin-left: 1.5em;
+            margin-bottom: 0.8em;
+        }
+        
+        #content-area :where(li) {
+            margin-bottom: 0.3em;
+        }
+        
+        #loading-indicator {
+            display: none; /* Hidden by default */
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+            color: var(--text-color);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <header>
+        <h1 class="text-3xl md:text-4xl font-bold text-center py-4">
+            三十天学英语：英语学习很简单
+        </h1>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 flex-grow">
+        
+        <!-- Day Selector -->
+        <section aria-labelledby="day-select-heading">
+            <h2 id="day-select-heading" class="text-xl font-semibold mb-4 text-center">选择学习哪一天:</h2>
+            <div id="day-selector" class="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-10 lg:grid-cols-15 gap-2 mb-8 justify-center">
+                <!-- Day buttons will be generated here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Content Display Area -->
+        <section aria-live="polite">
+            <div id="loading-indicator">Loading content...</div>
+            <div id="content-area" class="prose max-w-none p-6 rounded-lg shadow-lg min-h-[200px]">
+                <!-- Default message -->
+                <p>在上方选择你要学习的内容，如果打开有报错或无法打开的情况，那一定是还没有上传相应的内容，请耐心等待。</p>
+                <!-- Markdown content will be loaded here -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-4 mt-8 text-sm">
+        三十天学英语：英语学习很简单 | 版权所有 风清扬
+    </footer>
+
+    <script>
+        const daySelector = document.getElementById('day-selector');
+        const contentArea = document.getElementById('content-area');
+        const loadingIndicator = document.getElementById('loading-indicator');
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = themeToggleBtn.querySelector('i');
+        const totalDays = 30;
+        let activeButton = null; // Keep track of the currently active button
+        
+        // Theme Toggle Functionality
+        function setTheme(isDark) {
+            if (isDark) {
+                document.documentElement.classList.add('dark');
+                document.documentElement.classList.remove('light');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            } else {
+                document.documentElement.classList.add('light');
+                document.documentElement.classList.remove('dark');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            }
+            // Save theme preference
+            localStorage.setItem('darkTheme', isDark);
+        }
+        
+        // Check for saved theme preference
+        function loadThemePreference() {
+            const darkTheme = localStorage.getItem('darkTheme');
+            if (darkTheme === 'true') {
+                setTheme(true);
+            } else {
+                setTheme(false);
+            }
+        }
+        
+        // Toggle theme when button is clicked
+        themeToggleBtn.addEventListener('click', () => {
+            const isDarkTheme = document.documentElement.classList.contains('dark');
+            setTheme(!isDarkTheme);
+        });
+        
+        // Load theme preference on initial page load
+        loadThemePreference();
+
+        // --- Function to fetch and display Markdown content ---
+        async function loadDayContent(day) {
+            const filePath = `days/day${day}.md`;
+            contentArea.innerHTML = ''; // Clear previous content
+            contentArea.style.display = 'none';
+            loadingIndicator.style.display = 'block'; // Show loading indicator
+
+            try {
+                const response = await fetch(filePath);
+
+                if (!response.ok) {
+                    throw new Error(`Could not fetch ${filePath}. Status: ${response.status}. Make sure the file exists.`);
+                }
+
+                const markdownText = await response.text();
+
+                // Use Marked.js to convert Markdown to HTML
+                // Enable GitHub Flavored Markdown (GFM) and breaks for better compatibility
+                marked.setOptions({
+                  gfm: true,
+                  breaks: true,
+                });
+                const htmlContent = marked.parse(markdownText);
+
+                contentArea.innerHTML = htmlContent;
+
+            } catch (error) {
+                console.error('Error loading day content:', error);
+                contentArea.innerHTML = `<p class="text-gray-500 text-sm">${error.message}</p><p class="mt-4">Please ensure the file <code>${filePath}</code> exists in your repository's <code>/days/</code> folder.</p>`;
+            } finally {
+                 loadingIndicator.style.display = 'none'; // Hide loading indicator
+                 contentArea.style.display = 'block'; // Show content area
+            }
+        }
+
+        // --- Generate Day Buttons ---
+        for (let i = 1; i <= totalDays; i++) {
+            const button = document.createElement('button');
+            button.innerText = i;
+            button.dataset.day = i; // Store the day number in a data attribute
+            button.className = 'day-button text-white font-bold py-2 px-2 rounded text-center cursor-pointer transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500';
+            button.setAttribute('aria-label', `Load content for Day ${i}`);
+
+            button.addEventListener('click', (event) => {
+                const selectedDay = event.target.dataset.day;
+                
+                // Remove active class from the previously active button
+                if (activeButton) {
+                    activeButton.classList.remove('active');
+                }
+                // Add active class to the clicked button
+                event.target.classList.add('active');
+                activeButton = event.target; // Update the reference to the active button
+
+                loadDayContent(selectedDay);
+            });
+
+            daySelector.appendChild(button);
+        }
+
+        // Optional: Automatically load Day 1 on page load if day1.md exists
+        // Uncomment the line below if you want this behavior
+        // document.addEventListener('DOMContentLoaded', () => loadDayContent(1));
+    </script>
+</body>
+</html>
