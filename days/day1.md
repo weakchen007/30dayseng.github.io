@@ -3,27 +3,27 @@
 ## 一、招呼用语（Addressings）
 1、Excuse me. 原谅我
 <audio controls>
-  <source src=\"assets/audio/001.mp3\" type=\"audio/mpeg\">
+  <source src=\"assets/audio/01-01-01.mp3\" type=\"audio/mpeg\">
   你的浏览器不支持音频播放。
 </audio>
 2、Pardon me. 对不起
 <audio controls>
-  <source src=\"assets/audio/002.mp3\" type=\"audio/mpeg\">
+  <source src=\"assets/audio/01-01-02.mp3\" type=\"audio/mpeg\">
   你的浏览器不支持音频播放。
 </audio>
 3、I say! Say! 喂！
 <audio controls>
-  <source src=\"assets/audio/003.mp3\" type=\"audio/mpeg\">
+  <source src=\"assets/audio/01-01-03.mp3\" type=\"audio/mpeg\">
   你的浏览器不支持音频播放。
 </audio>
 4、Hello! Hi! 喂！（哈罗！）
 <audio controls>
-  <source src=\"assets/audio/004.mp3\" type=\"audio/mpeg\">
+  <source src=\"assets/audio/01-01-04.mp3\" type=\"audio/mpeg\">
   你的浏览器不支持音频播放。
 </audio>
 5、Hey! 喂！
 <audio controls>
-  <source src=\"assets/audio/005.mp3\" type=\"audio/mpeg\">
+  <source src=\"assets/audio/01-01-05.mp3\" type=\"audio/mpeg\">
   你的浏览器不支持音频播放。
 </audio>
 
