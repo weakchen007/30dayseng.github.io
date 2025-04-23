@@ -64,37 +64,70 @@
 
 1、I’m sorry. 对不起。
 <audio src="/audio/class1/02-03-01.mp3" controls="true"></audio>
-2、 beg your pardon. 请你原谅。
+2、I beg your pardon. 请你原谅。
+<audio src="/audio/class1/02-03-02.mp3" controls="true"></audio>
 3、Please forgive me. 请原谅我。
+<audio src="/audio/class1/02-03-03.mp3" controls="true"></audio>
 4、Excuse me. 原谅我。
+<audio src="/audio/class1/02-03-04.mp3" controls="true"></audio>
 5、Excuse me, but… 对不起…
+<audio src="/audio/class1/02-03-05.mp3" controls="true"></audio>
 6、I’m awfully sorry. 很对不起。
+<audio src="/audio/class1/02-03-06.mp3" controls="true"></audio>
 7、I’m very sorry for what I’ve said to you. 对我说过的话我感到抱歉。
+<audio src="/audio/class1/02-03-07.mp3" controls="true"></audio>
 8、It was wrong of me. 我的错。
+<audio src="/audio/class1/02-03-08.mp3" controls="true"></audio>
 9、Oh, that’s all right. 哦，不要紧。
+<audio src="/audio/class1/02-03-09.mp3" controls="true"></audio>
 10、Don’t worry about that. 不要再想那事了。
+<audio src="/audio/class1/02-03-10.mp3" controls="true"></audio>
 11、Oh, never mind. 哦，没关系。
+<audio src="/audio/class1/02-03-11.mp3" controls="true"></audio>
 12、Don’t let it worry you. 不要再想那事了。
+<audio src="/audio/class1/02-03-12.mp3" controls="true"></audio>
 13、I quite understand. 我很理解。
+<audio src="/audio/class1/02-03-13.mp3" controls="true"></audio>
 14、It doesn’t matter at all. 一点没关系。
+<audio src="/audio/class1/02-03-14.mp3" controls="true"></audio>
 15、It’s not your fault. 不是你的错。
+<audio src="/audio/class1/02-03-15.mp3" controls="true"></audio>
 16、Let’s forget it. 不要放在心上了。
+<audio src="/audio/class1/02-03-16.mp3" controls="true"></audio>
 17、No harm. 不碍事，没关系。
+<audio src="/audio/class1/02-03-17.mp3" controls="true"></audio>
 
 ## 四、请求用语（Request）
 
 1、May I ask a favor of you? 请你帮我个忙行吗？
+<audio src="/audio/class1/02-04-01.mp3" controls="true"></audio>
 2、Will you please open the window? 请你打开窗户好吗？
+<audio src="/audio/class1/02-04-02.mp3" controls="true"></audio>
 3、Would you kindly help me with this work? 请帮我做这事好吗？
+<audio src="/audio/class1/02-04-03.mp3" controls="true"></audio>
 4、Would you mind shutting the window? 请您关上窗户好吗？
+<audio src="/audio/class1/02-04-04.mp3" controls="true"></audio>
 5、May I borrow this book? 我可以借这本书吗？
+<audio src="/audio/class1/02-04-05.mp3" controls="true"></audio>
 6、Please come here. 请来这里。
+<audio src="/audio/class1/02-04-06.mp3" controls="true"></audio>
 7、Come here, please. 请来这里。
+<audio src="/audio/class1/02-04-07.mp3" controls="true"></audio>
 8、Can you give me a lift? 我能搭车吗？
+<audio src="/audio/class1/02-04-08.mp3" controls="true"></audio>
 9、Could I ask you to write a letter to him? 您可以给他写封信吗？
+<audio src="/audio/class1/02-04-09.mp3" controls="true"></audio>
 10、Do you mind if I get a lift in your car, please?如果我搭你的车，你不反对吧？
+<audio src="/audio/class1/02-04-10.mp3" controls="true"></audio>
 11、I’d like some cigarettes, please. 对不起，我想要些香烟。
+<audio src="/audio/class1/02-04-11.mp3" controls="true"></audio>
 12、Would you do me a good thing? 请为我做这件事行吗？
+<audio src="/audio/class1/02-04-12.mp3" controls="true"></audio>
 13、Would you like to turn off the radio, please? 请关掉收音机好吗？
+<audio src="/audio/class1/02-04-13.mp3" controls="true"></audio>
 14、I’d be very grateful if you’d get me up at 6:30 tomorrow.如果你在明天六点半叫醒我，我将非常感谢。
+<audio src="/audio/class1/02-04-14.mp3" controls="true"></audio>
+
+
+
 
