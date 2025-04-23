@@ -14,15 +14,25 @@
 
 ## 二、见面时的用语（Greetings）
 1、Good morning! 早安！（上午用）
+<audio src="/assets/audio/class1/01-02-01.mp3" controls="true"></audio>
 2、Good afternoon! 下午好
+<audio src="/assets/audio/class1/01-02-02.mp3" controls="true"></audio>
 3、Good evening! 晚上好（黄昏后用）
+<audio src="/assets/audio/class1/01-02-03.mp3" controls="true"></audio>
 4、How are you? 你好吗？
+<audio src="/assets/audio/class1/01-02-04.mp3" controls="true"></audio>
 5、How are things going with you? 你好吗？
+<audio src="/assets/audio/class1/01-02-05.mp3" controls="true"></audio>
 6、All right, thank you. 很好，谢谢！
+<audio src="/assets/audio/class1/01-02-06.mp3" controls="true"></audio>
 7、Much better, thank you. 很好，谢谢！
+<audio src="/assets/audio/class1/01-02-07.mp3" controls="true"></audio>
 8、Pretty good, thank you. 很好，谢谢！
+<audio src="/assets/audio/class1/01-02-08.mp3" controls="true"></audio>
 9、Very well, thank you. 很好，谢谢！
+<audio src="/assets/audio/class1/01-02-09.mp3" controls="true"></audio>
 10、Fine, thank you. And you? 很好，谢谢！你呢？
+<audio src="/assets/audio/class1/01-02-10.mp3" controls="true"></audio>
 
 ## 三、告别用语（Partings）
 1、Good-bye. 再见。
