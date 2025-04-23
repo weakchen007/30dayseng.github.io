@@ -3,39 +3,67 @@
 ## 一、介绍用语（Introducings）
 
 1、Mr. Green, this is Mr. Brown. 格林先生，这是布朗先生。
+<audio src="/audio/class1/02-01-01.mp3" controls="true"></audio>
 2、How do you do? 你好！
+<audio src="/audio/class1/02-01-02.mp3" controls="true"></audio>
 3、I’m glad to see you. 很高兴见到你。
+<audio src="/audio/class1/02-01-03.mp3" controls="true"></audio>
 4、I’ve heard a lot about you from Mr. Hill. 从希尔先生处得知你的很多事。
+<audio src="/audio/class1/02-01-04.mp3" controls="true"></audio>
 5、Mr. Jones, I presume. 我想，你是琼斯先生吧。
+<audio src="/audio/class1/02-01-05.mp3" controls="true"></audio>
 6、My name is Wang Tao. 我叫王涛。
+<audio src="/audio/class1/02-01-06.mp3" controls="true"></audio>
 7、I’d like you to meet Mr. Brown. 我想让你见见布朗先生。
+<audio src="/audio/class1/02-01-07.mp3" controls="true"></audio>
 8、Nice to meet you. 很高兴碰到你！
+<audio src="/audio/class1/02-01-08.mp3" controls="true"></audio>
 9、Mr. Watson, may I introduce you to Mr. James?华生先生，我可以把詹姆斯先生介绍给你吗？
+<audio src="/audio/class1/02-01-09.mp3" controls="true"></audio>
 10、It is with great pleasure that I introduce to you Mr. James.我很荣幸地把詹姆斯先生介绍给你。
+<audio src="/audio/class1/02-01-10.mp3" controls="true"></audio>
 
 ## 二、致谢用语(Thanks)
 
 1、Thank you. 谢谢。
+<audio src="/audio/class1/02-02-01.mp3" controls="true"></audio>
 2、Thank you very much. 非常感谢。
+<audio src="/audio/class1/02-02-02.mp3" controls="true"></audio>
 3、Thanks a lot. 十分感谢。
+<audio src="/audio/class1/02-02-03.mp3" controls="true"></audio>
 4、It’s very kind of you. 你真好。
+<audio src="/audio/class1/02-02-04.mp3" controls="true"></audio>
 5、I’m much obliged. 我非常感谢。
+<audio src="/audio/class1/02-02-05.mp3" controls="true"></audio>
 6、Many thanks. 多谢。
+<audio src="/audio/class1/02-02-06.mp3" controls="true"></audio>
 7、Many thanks for your coming here. 多谢你的光临。
+<audio src="/audio/class1/02-02-07.mp3" controls="true"></audio>
 8、Much appreciated. 非常感谢。
+<audio src="/audio/class1/02-02-08.mp3" controls="true"></audio>
 9、Not at all. 没什么。
+<audio src="/audio/class1/02-02-09.mp3" controls="true"></audio>
 10、You are welcome. 不客气。
+<audio src="/audio/class1/02-02-10.mp3" controls="true"></audio>
 11、That’s all right. 请勿介意。
+<audio src="/audio/class1/02-02-11.mp3" controls="true"></audio>
 12、At your service. 愿为你效劳。
+<audio src="/audio/class1/02-02-12.mp3" controls="true"></audio>
 13、It’s a pleasure. 我很乐意。
+<audio src="/audio/class1/02-02-13.mp3" controls="true"></audio>
 14、No bother at all. 不费事。
+<audio src="/audio/class1/02-02-14.mp3" controls="true"></audio>
 15、No trouble at all. 没什么。
+<audio src="/audio/class1/02-02-15.mp3" controls="true"></audio>
 16、Please don’t mention it. 请不要客气。
+<audio src="/audio/class1/02-02-16.mp3" controls="true"></audio>
 17、It was the least I could do. 这实在微不足道，不过尽力而已。
+<audio src="/audio/class1/02-02-17.mp3" controls="true"></audio>
 
 ## 三、道歉用语（Apologies）
 
 1、I’m sorry. 对不起。
+<audio src="/audio/class1/02-03-01.mp3" controls="true"></audio>
 2、 beg your pardon. 请你原谅。
 3、Please forgive me. 请原谅我。
 4、Excuse me. 原谅我。
