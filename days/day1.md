@@ -23,7 +23,7 @@
 </audio>
 5、Hey! 喂！
 <audio controls>
-  <source src=\"https://github.com/weakchen007/30dayseng.github.io/tree/main/assets/audio/01-01-05.mp3\" type=\"audio/mpeg\">
+  <source src=\"http://30dayseng.github.io/assets/audio/01-01-01.mp3\" type=\"audio/mpeg\">
   你的浏览器不支持音频播放。
 </audio>
 
