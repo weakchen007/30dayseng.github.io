@@ -2,10 +2,7 @@
 
 ## 一、招呼用语（Addressings）
 1、Excuse me. 原谅我
-<audio controls>
-  <source src=\"assets/audio/01-01-01.mp3\" type=\"audio/mpeg\">
-  你的浏览器不支持音频播放。
-</audio>
+<audio src="assets/01-01-01.mp3" controls="true"></audio>
 2、Pardon me. 对不起
 <audio controls>
   <source src=\"assets/audio/01-01-02.mp3\" type=\"audio/mpeg\">
