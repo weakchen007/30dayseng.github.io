@@ -90,14 +90,17 @@ B: I will. Bye.
 |---------|--------|--------|----------|
 |dial phone<audio src="/audio/class30/30-03-01.mp3" controls="true"></audio>|拨盘式电话|push button phone<audio src="/audio/class30/30-03-02.mp3" controls="true"></audio>|按键式电话|
 |coin slot<audio src="/audio/class30/30-03-03.mp3" controls="true"></audio>|投币口|telephone booth<audio src="/audio/class30/30-03-04.mp3" controls="true"></audio>|公用电话亭|
-|operator|接线员|area code|地区编号|
-|telephone number|电话号码|extension|分机|
-|pay telephone(public telephone)|(电话)付钱电话|Information(Directory Assistance)|电话问讯台|
-|telephone directory|电话簿|long distance call|长途电话|
-|station to station call|叫号电话|person to person call|叫人电话|
-|collect call|受话者付费电话|overseas call|国际长途电话|
-|to be cut off|被切断|number|电话号码|
-|to connect|接|switch board|交换台|
-|to hang up|挂(电话)|to hold on|不要放下(电话)|
-|to dial|拨号|to call back|回电话|
-|to leave a message|留口信|mobile and marine call|流动与海上电话|
+|operator<audio src="/audio/class30/30-03-05.mp3" controls="true"></audio>|接线员|area code<audio src="/audio/class30/30-03-06.mp3" controls="true"></audio>|地区编号|
+|telephone number<audio src="/audio/class30/30-03-07.mp3" controls="true"></audio>|电话号码|extension<audio src="/audio/class30/30-03-08.mp3" controls="true"></audio>|分机|
+|pay telephone(public telephone)<audio src="/audio/class30/30-03-09.mp3" controls="true"></audio>|(电话)付钱电话|Information(Directory Assistance)<audio src="/audio/class30/30-03-10.mp3" controls="true"></audio>|电话问讯台|
+|telephone directory<audio src="/audio/class30/30-03-11.mp3" controls="true"></audio>|电话簿|long distance call<audio src="/audio/class30/30-03-12.mp3" controls="true"></audio>|长途电话|
+|station to station call<audio src="/audio/class30/30-03-13.mp3" controls="true"></audio>|叫号电话|person to person call<audio src="/audio/class30/30-03-14.mp3" controls="true"></audio>|叫人电话|
+|collect call<audio src="/audio/class30/30-03-15.mp3" controls="true"></audio>|受话者付费电话|overseas call<audio src="/audio/class30/30-03-16.mp3" controls="true"></audio>|国际长途电话|
+|to be cut off<audio src="/audio/class30/30-03-17.mp3" controls="true"></audio>|被切断|number<audio src="/audio/class30/30-03-18.mp3" controls="true"></audio>|电话号码|
+|to connect<audio src="/audio/class30/30-03-19.mp3" controls="true"></audio>|接|switch board<audio src="/audio/class30/30-03-20.mp3" controls="true"></audio>|交换台|
+|to hang up<audio src="/audio/class30/30-03-21.mp3" controls="true"></audio>|挂(电话)|to hold on<audio src="/audio/class30/30-03-22.mp3" controls="true"></audio>|不要放下(电话)|
+|to dial<audio src="/audio/class30/30-03-23.mp3" controls="true"></audio>|拨号|to call back<audio src="/audio/class30/30-03-24.mp3" controls="true"></audio>|回电话|
+|to leave a message<audio src="/audio/class30/30-03-26.mp3" controls="true"></audio>|留口信|mobile and marine call<audio src="/audio/class30/30-03-26.mp3" controls="true"></audio>|流动与海上电话|
+
+
+
