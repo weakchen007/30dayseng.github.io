@@ -4,74 +4,359 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>三十天学英语</title>
-    <meta name="description" content="一个三十天学英语的挑战，以最简单的方式提高英文能力。">
-    
-    <!-- 保持外部资源不变 -->
+    <!-- Added Meta Description for better previews -->
+    <meta name="description" content="一个三十天学英语的挑战，以最简单的方式提高英文能力。 每天跟踪进展和访问学习材料。">
+    <!-- TailwindCSS via CDN -->
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <!-- Marked.js via CDN (Markdown to HTML converter) -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Font Awesome for theme toggle icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- 核心CSS保持不变 -->
     <style>
-        /* 你原来的CSS代码完全保留 */
-        :root { --bg-gradient-from: #EBF5FF; /* ... */ }
-        /* ... 剩余的CSS全部保留 ... */
+        /* Theme variables */
+        :root {
+            --bg-gradient-from: #EBF5FF;
+            --bg-gradient-to: #E8E8FC;
+            --text-color: #1F2937;
+            --header-bg: #FFFFFF;
+            --header-text: #4338CA;
+            --content-bg: #FFFFFF;
+            --footer-bg: rgba(255, 255, 255, 0.5);
+            --button-bg: #6366F1;
+            --button-hover: #4F46E5;
+            --button-active: #2563EB;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+            --link-color: #2563EB;
+            --code-bg: #F3F4F6;
+            --blockquote-border: #E5E7EB;
+            --blockquote-text: #4B5563;
+        }
+        
+        html.dark {
+            --bg-gradient-from: #111827;
+            --bg-gradient-to: #1E293B;
+            --text-color: #E5E7EB;
+            --header-bg: #1F2937;
+            --header-text: #A5B4FC;
+            --content-bg: #374151;
+            --footer-bg: rgba(31, 41, 55, 0.5);
+            --button-bg: #4F46E5;
+            --button-hover: #4338CA;
+            --button-active: #3730A3;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --link-color: #93C5FD;
+            --code-bg: #1F2937;
+            --blockquote-border: #4B5563;
+            --blockquote-text: #9CA3AF;
+        }
+        
+        /* 基础样式保持不变 */
+        body {
+            background: linear-gradient(to bottom right, var(--bg-gradient-from), var(--bg-gradient-to));
+            color: var(--text-color);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        
+        header {
+            background-color: var(--header-bg);
+            box-shadow: 0 4px 6px var(--shadow-color);
+            transition: background-color 0.3s ease;
+        }
+        
+        header h1 {
+            color: var(--header-text);
+            transition: color 0.3s ease;
+        }
+        
+        #content-area {
+            background-color: var(--content-bg);
+            box-shadow: 0 10px 15px var(--shadow-color);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            color: var(--text-color);
+        }
+
+        /* Markdown 内容样式 */
+        #content-area h1,
+        #content-area h2,
+        #content-area h3,
+        #content-area h4,
+        #content-area h5,
+        #content-area h6 {
+            color: var(--text-color);
+            margin-top: 1.2em;
+            margin-bottom: 0.6em;
+        }
+
+        #content-area p {
+            color: var(--text-color);
+            margin-bottom: 0.8em;
+        }
+
+        #content-area a {
+            color: var(--link-color);
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        #content-area a:hover {
+            opacity: 0.8;
+        }
+
+        #content-area code {
+            background-color: var(--code-bg);
+            padding: 0.2em 0.4em;
+            border-radius: 0.3em;
+            font-size: 0.9em;
+        }
+
+        #content-area pre {
+            background-color: var(--code-bg);
+            padding: 1em;
+            border-radius: 0.5em;
+            overflow-x: auto;
+            margin: 1em 0;
+        }
+
+        #content-area blockquote {
+            border-left: 4px solid var(--blockquote-border);
+            padding-left: 1em;
+            margin: 1em 0;
+            color: var(--blockquote-text);
+        }
+
+        #content-area ul,
+        #content-area ol {
+            color: var(--text-color);
+            margin-left: 1.5em;
+            margin-bottom: 0.8em;
+        }
+
+        #content-area li {
+            margin-bottom: 0.3em;
+        }
+        
+        .day-button {
+            background-color: var(--button-bg);
+            transition: background-color 0.3s ease;
+        }
+        
+        .day-button:hover {
+            background-color: var(--button-hover);
+        }
+        
+        .day-button.active {
+            background-color: var(--button-active);
+            border: 2px solid var(--button-hover);
+        }
+        
+        footer {
+            background-color: var(--footer-bg);
+            transition: background-color 0.3s ease;
+        }
+        
+        /* Theme toggle button */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: var(--button-bg);
+            color: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .theme-toggle:hover {
+            background-color: var(--button-hover);
+            transform: rotate(30deg);
+        }
+        
+        #loading-indicator {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+            color: var(--text-color);
+            opacity: 0.7;
+        }
+
+        /* 图片样式 */
+        #content-area img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5em;
+            margin: 1em 0;
+        }
+
+        /* 表格样式 */
+        #content-area table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+
+        #content-area th,
+        #content-area td {
+            border: 1px solid var(--blockquote-border);
+            padding: 0.5em;
+            color: var(--text-color);
+        }
+
+        #content-area th {
+            background-color: var(--code-bg);
+        }
     </style>
-
-    <!-- 🔒 混淆后的JS（仅核心逻辑） -->
-    <script>
-    !function(){const _0x3f9a=["\x64\x61\x72\x6B","\x74\x6F\x67\x67\x6C\x65","\x6C\x69\x67\x68\x74","\x61\x64\x64","\x72\x65\x6D\x6F\x76\x65","\x66\x61\x2D\x6D\x6F\x6F\x6E","\x66\x61\x2D\x73\x75\x6E","\x6C\x6F\x63\x61\x6C\x53\x74\x6F\x72\x61\x67\x65"];function toggleTheme(){var _0x4f8ax2=document.documentElement.classList;var _0x4f8ax3=_0x4f8ax2.contains(_0x3f9a[0])?"\x6C\x69\x67\x68\x74":"\x64\x61\x72\x6B";_0x4f8ax2[_0x3f9a[4]](_0x3f9a[0]),_0x4f8ax2[_0x3f9a[3]](_0x4f8ax3);var _0x4f8ax4=document.querySelector("\x2E\x74\x68\x65\x6D\x65\x2D\x69\x63\x6F\x6E");_0x4f8ax4&&(_0x4f8ax4[_0x3f9a[4]](_0x4f8ax3==_0x3f9a[0]?_0x3f9a[5]:_0x3f9a[6]),_0x4f8ax4[_0x3f9a[3]](_0x4f8ax3==_0x3f9a[0]?_0x3f8a[6]:_0x3f8a[5]));localStorage.setItem(_0x3f9a[7],_0x4f8ax3==_0x3f9a[0])}document.getElementById(_0x3f9a[1]).addEventListener(_0x3f9a[2],toggleTheme)}();
-    </script>
 </head>
-
+<!-- 其余 HTML 内容保持不变 -->
 <body>
-    <!-- HTML结构完全不变 -->
+    <!-- Theme Toggle Button -->
     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme">
-        <i class="fas fa-sun theme-icon"></i>
+        <i class="fas fa-sun"></i>
     </button>
 
     <header>
         <h1 class="text-3xl md:text-4xl font-bold text-center py-4">
-            三十天学英语：英语学习其实很简单
+            三十天学英语：英语学习很简单
         </h1>
     </header>
 
     <main class="container mx-auto px-4 py-8 flex-grow">
+        
         <!-- Day Selector -->
-        <section>
-            <h2 class="text-xl font-semibold mb-4 text-center">选择学习哪一天:</h2>
-            <div id="day-selector" class="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-10 lg:grid-cols-15 gap-2 mb-8 justify-center"></div>
-        </section>
-
-        <!-- Content Area -->
-        <section>
-            <div id="content-area" class="prose max-w-none p-6 rounded-lg shadow-lg min-h-[200px]">
-                <p>请选择学习日期...</p>
+        <section aria-labelledby="day-select-heading">
+            <h2 id="day-select-heading" class="text-xl font-semibold mb-4 text-center">选择学习哪一天:</h2>
+            <div id="day-selector" class="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-10 lg:grid-cols-15 gap-2 mb-8 justify-center">
+                <!-- Day buttons will be generated here by JavaScript -->
             </div>
         </section>
+
+        <!-- Content Display Area -->
+        <section aria-live="polite">
+            <div id="loading-indicator">Loading content...</div>
+            <div id="content-area" class="prose max-w-none p-6 rounded-lg shadow-lg min-h-[200px]">
+                <!-- Default message -->
+                <p>在上方选择你要学习的内容，如果打开有报错或无法打开的情况，那一定是还没有上传相应的内容，请耐心等待。</p>
+                <!-- Markdown content will be loaded here -->
+            </div>
+        </section>
+
     </main>
 
     <footer class="text-center py-4 mt-8 text-sm">
-        三十天学英语 | 版权所有 风清扬
+        三十天学英语：英语学习其实很简单 | 版权所有 风清扬
     </footer>
 
-    <!-- 未混淆的JS部分（确保基础功能） -->
     <script>
-    // 生成日期按钮
-    for(let i=1;i<=30;i++){
-        const btn=document.createElement('button');
-        btn.textContent=i;
-        btn.className='day-button text-white p-2 rounded';
-        btn.onclick=()=>loadDayContent(i);
-        document.getElementById('day-selector').appendChild(btn);
-    }
+        const daySelector = document.getElementById('day-selector');
+        const contentArea = document.getElementById('content-area');
+        const loadingIndicator = document.getElementById('loading-indicator');
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = themeToggleBtn.querySelector('i');
+        const totalDays = 30;
+        let activeButton = null; // Keep track of the currently active button
+        
+        // Theme Toggle Functionality
+        function setTheme(isDark) {
+            if (isDark) {
+                document.documentElement.classList.add('dark');
+                document.documentElement.classList.remove('light');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            } else {
+                document.documentElement.classList.add('light');
+                document.documentElement.classList.remove('dark');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            }
+            // Save theme preference
+            localStorage.setItem('darkTheme', isDark);
+        }
+        
+        // Check for saved theme preference
+        function loadThemePreference() {
+            const darkTheme = localStorage.getItem('darkTheme');
+            if (darkTheme === 'true') {
+                setTheme(true);
+            } else {
+                setTheme(false);
+            }
+        }
+        
+        // Toggle theme when button is clicked
+        themeToggleBtn.addEventListener('click', () => {
+            const isDarkTheme = document.documentElement.classList.contains('dark');
+            setTheme(!isDarkTheme);
+        });
+        
+        // Load theme preference on initial page load
+        loadThemePreference();
 
-    // 加载内容函数（保持可读性）
-    async function loadDayContent(day){
-        const res=await fetch(`days/day${day}.md`);
-        document.getElementById('content-area').innerHTML=res.ok? 
-            marked.parse(await res.text()) : "内容加载失败";
-    }
+        // --- Function to fetch and display Markdown content ---
+        async function loadDayContent(day) {
+            const filePath = `days/day${day}.md`;
+            contentArea.innerHTML = ''; // Clear previous content
+            contentArea.style.display = 'none';
+            loadingIndicator.style.display = 'block'; // Show loading indicator
+
+            try {
+                const response = await fetch(filePath);
+
+                if (!response.ok) {
+                    throw new Error(`Could not fetch ${filePath}. Status: ${response.status}. Make sure the file exists.`);
+                }
+
+                const markdownText = await response.text();
+
+                // Use Marked.js to convert Markdown to HTML
+                // Enable GitHub Flavored Markdown (GFM) and breaks for better compatibility
+                marked.setOptions({
+                  gfm: true,
+                  breaks: true,
+                });
+                const htmlContent = marked.parse(markdownText);
+
+                contentArea.innerHTML = htmlContent;
+
+            } catch (error) {
+                console.error('Error loading day content:', error);
+                contentArea.innerHTML = `<p class="text-gray-500 text-sm">${error.message}</p><p class="mt-4">Please ensure the file <code>${filePath}</code> exists in your repository's <code>/days/</code> folder.</p>`;
+            } finally {
+                 loadingIndicator.style.display = 'none'; // Hide loading indicator
+                 contentArea.style.display = 'block'; // Show content area
+            }
+        }
+
+        // --- Generate Day Buttons ---
+        for (let i = 1; i <= totalDays; i++) {
+            const button = document.createElement('button');
+            button.innerText = i;
+            button.dataset.day = i; // Store the day number in a data attribute
+            button.className = 'day-button text-white font-bold py-2 px-2 rounded text-center cursor-pointer transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500';
+            button.setAttribute('aria-label', `Load content for Day ${i}`);
+
+            button.addEventListener('click', (event) => {
+                const selectedDay = event.target.dataset.day;
+                
+                // Remove active class from the previously active button
+                if (activeButton) {
+                    activeButton.classList.remove('active');
+                }
+                // Add active class to the clicked button
+                event.target.classList.add('active');
+                activeButton = event.target; // Update the reference to the active button
+
+                loadDayContent(selectedDay);
+            });
+
+            daySelector.appendChild(button);
+        }
     </script>
 </body>
 </html>
