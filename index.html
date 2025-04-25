@@ -1,259 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang=en class=light>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>三十天学英语</title>
-    <!-- Added Meta Description for better previews -->
-    <meta name="description" content="一个三十天学英语的挑战，以最简单的方式提高英文能力。 每天跟踪进展和访问学习材料。">
-    <!-- TailwindCSS via CDN -->
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    <!-- Marked.js via CDN (Markdown to HTML converter) -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <!-- Font Awesome for theme toggle icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Theme variables */
-        :root {
-            --bg-gradient-from: #EBF5FF;
-            --bg-gradient-to: #E8E8FC;
-            --text-color: #1F2937;
-            --header-bg: #FFFFFF;
-            --header-text: #4338CA;
-            --content-bg: #FFFFFF;
-            --footer-bg: rgba(255, 255, 255, 0.5);
-            --button-bg: #6366F1;
-            --button-hover: #4F46E5;
-            --button-active: #2563EB;
-            --shadow-color: rgba(0, 0, 0, 0.1);
-            --link-color: #2563EB;
-            --code-bg: #F3F4F6;
-            --blockquote-border: #E5E7EB;
-            --blockquote-text: #4B5563;
-        }
-        
-        html.dark {
-            --bg-gradient-from: #111827;
-            --bg-gradient-to: #1E293B;
-            --text-color: #E5E7EB;
-            --header-bg: #1F2937;
-            --header-text: #A5B4FC;
-            --content-bg: #374151;
-            --footer-bg: rgba(31, 41, 55, 0.5);
-            --button-bg: #4F46E5;
-            --button-hover: #4338CA;
-            --button-active: #3730A3;
-            --shadow-color: rgba(0, 0, 0, 0.3);
-            --link-color: #93C5FD;
-            --code-bg: #1F2937;
-            --blockquote-border: #4B5563;
-            --blockquote-text: #9CA3AF;
-        }
-        
-        /* 基础样式保持不变 */
-        body {
-            background: linear-gradient(to bottom right, var(--bg-gradient-from), var(--bg-gradient-to));
-            color: var(--text-color);
-            transition: background 0.3s ease, color 0.3s ease;
-        }
-        
-        header {
-            background-color: var(--header-bg);
-            box-shadow: 0 4px 6px var(--shadow-color);
-            transition: background-color 0.3s ease;
-        }
-        
-        header h1 {
-            color: var(--header-text);
-            transition: color 0.3s ease;
-        }
-        
-        #content-area {
-            background-color: var(--content-bg);
-            box-shadow: 0 10px 15px var(--shadow-color);
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-            color: var(--text-color);
-        }
-
-        /* Markdown 内容样式 */
-        #content-area h1,
-        #content-area h2,
-        #content-area h3,
-        #content-area h4,
-        #content-area h5,
-        #content-area h6 {
-            color: var(--text-color);
-            margin-top: 1.2em;
-            margin-bottom: 0.6em;
-        }
-
-        #content-area p {
-            color: var(--text-color);
-            margin-bottom: 0.8em;
-        }
-
-        #content-area a {
-            color: var(--link-color);
-            text-decoration: underline;
-            transition: color 0.3s ease;
-        }
-
-        #content-area a:hover {
-            opacity: 0.8;
-        }
-
-        #content-area code {
-            background-color: var(--code-bg);
-            padding: 0.2em 0.4em;
-            border-radius: 0.3em;
-            font-size: 0.9em;
-        }
-
-        #content-area pre {
-            background-color: var(--code-bg);
-            padding: 1em;
-            border-radius: 0.5em;
-            overflow-x: auto;
-            margin: 1em 0;
-        }
-
-        #content-area blockquote {
-            border-left: 4px solid var(--blockquote-border);
-            padding-left: 1em;
-            margin: 1em 0;
-            color: var(--blockquote-text);
-        }
-
-        #content-area ul,
-        #content-area ol {
-            color: var(--text-color);
-            margin-left: 1.5em;
-            margin-bottom: 0.8em;
-        }
-
-        #content-area li {
-            margin-bottom: 0.3em;
-        }
-        
-        .day-button {
-            background-color: var(--button-bg);
-            transition: background-color 0.3s ease;
-        }
-        
-        .day-button:hover {
-            background-color: var(--button-hover);
-        }
-        
-        .day-button.active {
-            background-color: var(--button-active);
-            border: 2px solid var(--button-hover);
-        }
-        
-        footer {
-            background-color: var(--footer-bg);
-            transition: background-color 0.3s ease;
-        }
-        
-        /* Theme toggle button */
-        .theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 100;
-            padding: 10px;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            background-color: var(--button-bg);
-            color: white;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .theme-toggle:hover {
-            background-color: var(--button-hover);
-            transform: rotate(30deg);
-        }
-        
-        #loading-indicator {
-            display: none;
-            text-align: center;
-            padding: 20px;
-            font-style: italic;
-            color: var(--text-color);
-            opacity: 0.7;
-        }
-
-        /* 图片样式 */
-        #content-area img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 0.5em;
-            margin: 1em 0;
-        }
-
-        /* 表格样式 */
-        #content-area table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1em 0;
-        }
-
-        #content-area th,
-        #content-area td {
-            border: 1px solid var(--blockquote-border);
-            padding: 0.5em;
-            color: var(--text-color);
-        }
-
-        #content-area th {
-            background-color: var(--code-bg);
-        }
-    </style>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<title>三十天学英语</title>
+<meta name=description content="一个三十天学英语的挑战，以最简单的方式提高英文能力。 每天跟踪进展和访问学习材料。">
+<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+<script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css>
+<style>:root{--bg-gradient-from:#ebf5ff;--bg-gradient-to:#e8e8fc;--text-color:#1f2937;--header-bg:#fff;--header-text:#4338ca;--content-bg:#fff;--footer-bg:rgba(255,255,255,0.5);--button-bg:#6366f1;--button-hover:#4f46e5;--button-active:#2563eb;--shadow-color:rgba(0,0,0,0.1);--link-color:#2563eb;--code-bg:#f3f4f6;--blockquote-border:#e5e7eb;--blockquote-text:#4b5563}html.dark{--bg-gradient-from:#111827;--bg-gradient-to:#1e293b;--text-color:#e5e7eb;--header-bg:#1f2937;--header-text:#a5b4fc;--content-bg:#374151;--footer-bg:rgba(31,41,55,0.5);--button-bg:#4f46e5;--button-hover:#4338ca;--button-active:#3730a3;--shadow-color:rgba(0,0,0,0.3);--link-color:#93c5fd;--code-bg:#1f2937;--blockquote-border:#4b5563;--blockquote-text:#9ca3af}body{background:linear-gradient(to bottom right,var(--bg-gradient-from),var(--bg-gradient-to));color:var(--text-color);transition:background .3s ease,color .3s ease}header{background-color:var(--header-bg);box-shadow:0 4px 6px var(--shadow-color);transition:background-color .3s ease}header h1{color:var(--header-text);transition:color .3s ease}#content-area{background-color:var(--content-bg);box-shadow:0 10px 15px var(--shadow-color);transition:background-color .3s ease,box-shadow .3s ease;color:var(--text-color)}#content-area h1,#content-area h2,#content-area h3,#content-area h4,#content-area h5,#content-area h6{color:var(--text-color);margin-top:1.2em;margin-bottom:.6em}#content-area p{color:var(--text-color);margin-bottom:.8em}#content-area a{color:var(--link-color);text-decoration:underline;transition:color .3s ease}#content-area a:hover{opacity:.8}#content-area code{background-color:var(--code-bg);padding:.2em .4em;border-radius:.3em;font-size:.9em}#content-area pre{background-color:var(--code-bg);padding:1em;border-radius:.5em;overflow-x:auto;margin:1em 0}#content-area blockquote{border-left:4px solid var(--blockquote-border);padding-left:1em;margin:1em 0;color:var(--blockquote-text)}#content-area ul,#content-area ol{color:var(--text-color);margin-left:1.5em;margin-bottom:.8em}#content-area li{margin-bottom:.3em}.day-button{background-color:var(--button-bg);transition:background-color .3s ease}.day-button:hover{background-color:var(--button-hover)}.day-button.active{background-color:var(--button-active);border:2px solid var(--button-hover)}footer{background-color:var(--footer-bg);transition:background-color .3s ease}.theme-toggle{position:fixed;top:20px;right:20px;z-index:100;padding:10px;border-radius:50%;cursor:pointer;transition:all .3s ease;background-color:var(--button-bg);color:white;width:40px;height:40px;display:flex;align-items:center;justify-content:center}.theme-toggle:hover{background-color:var(--button-hover);transform:rotate(30deg)}#loading-indicator{display:none;text-align:center;padding:20px;font-style:italic;color:var(--text-color);opacity:.7}#content-area img{max-width:100%;height:auto;border-radius:.5em;margin:1em 0}#content-area table{width:100%;border-collapse:collapse;margin:1em 0}#content-area th,#content-area td{border:1px solid var(--blockquote-border);padding:.5em;color:var(--text-color)}#content-area th{background-color:var(--code-bg)}</style>
 </head>
-<!-- 其余 HTML 内容保持不变 -->
 <body>
-    <!-- Theme Toggle Button -->
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme">
-        <i class="fas fa-sun"></i>
-    </button>
-
-    <header>
-        <h1 class="text-3xl md:text-4xl font-bold text-center py-4">
-            三十天学英语：英语学习很简单
-        </h1>
-    </header>
-
-    <main class="container mx-auto px-4 py-8 flex-grow">
-        
-        <!-- Day Selector -->
-        <section aria-labelledby="day-select-heading">
-            <h2 id="day-select-heading" class="text-xl font-semibold mb-4 text-center">选择学习哪一天:</h2>
-            <div id="day-selector" class="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-10 lg:grid-cols-15 gap-2 mb-8 justify-center">
-                <!-- Day buttons will be generated here by JavaScript -->
-            </div>
-        </section>
-
-        <!-- Content Display Area -->
-        <section aria-live="polite">
-            <div id="loading-indicator">Loading content...</div>
-            <div id="content-area" class="prose max-w-none p-6 rounded-lg shadow-lg min-h-[200px]">
-                <!-- Default message -->
-                <p>在上方选择你要学习的内容，如果打开有报错或无法打开的情况，那一定是还没有上传相应的内容，请耐心等待。</p>
-                <!-- Markdown content will be loaded here -->
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="text-center py-4 mt-8 text-sm">
-        三十天学英语：英语学习其实很简单 | 版权所有 风清扬
-    </footer>
-
-    <script>
+<button id=theme-toggle class=theme-toggle aria-label="Toggle dark/light theme">
+<i class="fas fa-sun"></i>
+</button>
+<header>
+<h1 class="text-3xl md:text-4xl font-bold text-center py-4">
+三十天学英语：英语学习很简单
+</h1>
+</header>
+<main class="container mx-auto px-4 py-8 flex-grow">
+<section aria-labelledby=day-select-heading>
+<h2 id=day-select-heading class="text-xl font-semibold mb-4 text-center">选择学习哪一天:</h2>
+<div id=day-selector class="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-10 lg:grid-cols-15 gap-2 mb-8 justify-center">
+</div>
+</section>
+<section aria-live=polite>
+<div id=loading-indicator>Loading content...</div>
+<div id=content-area class="prose max-w-none p-6 rounded-lg shadow-lg min-h-[200px]">
+<p>在上方选择你要学习的内容，如果打开有报错或无法打开的情况，那一定是还没有上传相应的内容，请耐心等待。</p>
+</div>
+</section>
+</main>
+<footer class="text-center py-4 mt-8 text-sm">
+三十天学英语：英语学习其实很简单 | 版权所有 风清扬
+</footer>
+<script>
         const daySelector = document.getElementById('day-selector');
         const contentArea = document.getElementById('content-area');
         const loadingIndicator = document.getElementById('loading-indicator');
