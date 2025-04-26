@@ -1,12 +1,349 @@
+
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"><title>三十天学英语</title>
-<meta name="description" content="一个三十天学英语的挑战，用最简单的方式提高英文能力。">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" sizes="180x180" href="/180.png"><link rel="icon" type="image/png" sizes="32x32" href="/32.png">
-<link rel="preload" href="https://cdn.tailwindcss.com?plugins=typography" as="script">
-<link rel="preload" href="https://cdn.jsdelivr.net/npm/marked/marked.min.js" as="script">
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
-<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<style>:root{--bg-gradient-from:#EBF5FF;--bg-gradient-to:#E8E8FC;--text-color:#1F2937;--header-bg:#FFFFFF;--header-text:#4338CA;--content-bg:#FFFFFF;--footer-bg:rgba(255,255,255,0.5);--button-bg:#6366F1;--button-hover:#4F46E5;--button-active:#2563EB;--shadow-color:rgba(0,0,0,0.1);--link-color:#2563EB;--code-bg:#F3F4F6;}html.dark{:root{--bg-gradient-from:#111827;--bg-gradient-to:#1E293B;--text-color:#E5E7EB;--header-bg:#1F2937;--header-text:#A5B4FC;--content-bg:#374151;--footer-bg:rgba(31,41,55,0.5);--button-bg:#4F46E5;--button-hover:#4338CA;--button-active:#3730A3;--shadow-color:rgba(0,0,0,0.3);--link-color:#93C5FD;--code-bg:#1F2937;}}body{background:linear-gradient(to bottom right,var(--bg-gradient-from),var(--bg-gradient-to));color:var(--text-color);min-height:100vh;display:flex;flex-direction:column;transition:background 0.2s ease,color 0.2s ease;}header{background-color:var(--header-bg);box-shadow:0 2px 4px var(--shadow-color);position:relative;padding:1rem 0;}header h1{color:var(--header-text);font-size:clamp(1.5rem,4vw,2.25rem);padding:0 1rem;}#content-area{background-color:var(--content-bg);box-shadow:0 2px 8px var(--shadow-color);color:var(--text-color);padding:1.25rem;margin:0 auto;width:100%;max-width:100%;border-radius:0.5rem;}#day-selector{display:grid;grid-template-columns:repeat(auto-fill,minmax(3rem,1fr));gap:0.5rem;padding:0 1rem;margin:0 auto 2rem;max-width:100%;}@media (max-width:640px){#day-selector{grid-template-columns:repeat(auto-fill,minmax(2.5rem,1fr));gap:0.25rem;}.day-button{min-width:2.5rem;font-size:0.875rem;padding:0.25rem;}}@media (max-width:400px){#day-selector{grid-template-columns:repeat(auto-fill,minmax(2rem,1fr));}.day-button{min-width:2rem;font-size:0.75rem;}}.day-button{background-color:var(--button-bg);color:white;border:none;border-radius:0.25rem;padding:0.5rem;font-size:1rem;min-width:3rem;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background-color 0.2s ease,transform 0.1s ease;}.day-button:hover{background-color:var(--button-hover);}.day-button:active{transform:scale(0.95);}.day-button.active{background-color:var(--button-active);box-shadow:0 0 0 2px var(--button-hover);}.theme-toggle{position:absolute;top:1rem;right:1rem;width:2.5rem;height:2.5rem;padding:0;border-radius:50%;background-color:var(--button-bg);color:white;display:flex;align-items:center;justify-content:center;cursor:pointer;border:none;z-index:100;}.theme-toggle i{display:block;width:1.5rem;height:1.5rem;line-height:1.5rem;}.loading{display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1000;}</style></head><body><header><h1 class="font-bold text-center">三十天学英语：英语学习其实很简单</h1><button id="theme-toggle" class="theme-toggle" aria-label="切换主题"><i class="fas fa-sun"></i></button></header><main class="flex-grow px-4 py-4 max-w-6xl mx-auto w-full"><section aria-labelledby="day-select-heading"><h2 id="day-select-heading" class="text-lg font-semibold mb-4 text-center"><img src="48.png" alt="选择图标" style="display:inline-block;vertical-align:middle;margin-right:8px;">选择学习哪一天:</h2><div id="day-selector"></div></section><section aria-live="polite"><div id="loading-indicator"><div class="animate-pulse">加载中...</div></div><div id="content-area" class="min-h-[200px]"><p>在上方选择你要学习的内容，如果打开有报错或无法打开的情况，那一定是还没有上传相应的内容，请耐心等待。</p><br><br><p><span class="font-bold text-xl">PS:想说好英语，重在养成语感。如果能熟练的读出来，不妨把它背下来，这会成为熟练说好英语的基石！</span></p></div></section></main><footer class="py-4 mt-4 text-sm text-center bg-opacity-50">三十天学英语：英语学习其实很简单 | 版权所有 风清扬</footer><script>const daySelector=document.getElementById('day-selector'),contentArea=document.getElementById('content-area'),loadingIndicator=document.getElementById('loading-indicator'),themeToggleBtn=document.getElementById('theme-toggle'),themeIcon=themeToggleBtn.querySelector('i'),totalDays=30,activeButton=null;setTheme=(isDark)=>{isDark?document.documentElement.classList.add('dark'):document.documentElement.classList.remove('dark');isDark?themeIcon.classList.replace('fa-sun','fa-moon'):themeIcon.classList.replace('fa-moon','fa-sun');localStorage.setItem('darkTheme',isDark);};loadThemePreference=()=>{const prefersDark=window.matchMedia('(prefers-color-scheme: dark)').matches,storedTheme=localStorage.getItem('darkTheme');storedTheme==='true'||(storedTheme===null&&prefersDark)?setTheme(true):setTheme(false);};themeToggleBtn.addEventListener('click',()=>{const isDarkTheme=document.documentElement.classList.contains('dark');setTheme(!isDarkTheme);});loadThemePreference();loadDayContent=async(day)=>{const filePath=`days/day${day}.md`;contentArea.innerHTML='';contentArea.style.display='none';loadingIndicator.style.display='block';try{const response=await fetch(filePath);if(!response.ok)throw new Error(`文件未找到: ${filePath}`);const markdownText=await response.text();marked.setOptions({gfm:true,breaks:true});contentArea.innerHTML=marked.parse(markdownText);}catch(error){console.error('加载内容失败:',error);contentArea.innerHTML=`<p class="text-sm opacity-75">${error.message}</p><p class="mt-2">请检查文件 <code>${filePath}</code> 是否存在。</p>`;}finally{loadingIndicator.style.display='none';contentArea.style.display='block';}};for(let i=1;i<=totalDays;i++){const button=document.createElement('button');button.textContent=i;button.dataset.day=i;button.className='day-button';button.ariaLabel=`加载第 ${i} 天内容`;button.addEventListener('click',(e)=>{activeButton&&activeButton.classList.remove('active');e.target.classList.add('active');activeButton=e.target;loadDayContent(e.target.dataset.day);});daySelector.appendChild(button);}</script></body></html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+    <title>三十天学英语</title>
+    <meta name="description" content="一个三十天学英语的挑战，用最简单的方式提高英文能力。">
+
+   <!-- 基本favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- 针对不同设备的图标 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/32.png">
+    
+    <!-- 预加载关键资源 -->
+    <link rel="preload" href="https://cdn.tailwindcss.com?plugins=typography" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/marked/marked.min.js" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style">
+    
+    <!-- TailwindCSS via CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <!-- Marked.js via CDN (Markdown to HTML converter) -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* 精简后的主题变量 */
+        :root {
+            --bg-gradient-from: #EBF5FF;
+            --bg-gradient-to: #E8E8FC;
+            --text-color: #1F2937;
+            --header-bg: #FFFFFF;
+            --header-text: #4338CA;
+            --content-bg: #FFFFFF;
+            --footer-bg: rgba(255, 255, 255, 0.5);
+            --button-bg: #6366F1;
+            --button-hover: #4F46E5;
+            --button-active: #2563EB;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+            --link-color: #2563EB;
+            --code-bg: #F3F4F6;
+        }
+        
+        html.dark {
+            --bg-gradient-from: #111827;
+            --bg-gradient-to: #1E293B;
+            --text-color: #E5E7EB;
+            --header-bg: #1F2937;
+            --header-text: #A5B4FC;
+            --content-bg: #374151;
+            --footer-bg: rgba(31, 41, 55, 0.5);
+            --button-bg: #4F46E5;
+            --button-hover: #4338CA;
+            --button-active: #3730A3;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --link-color: #93C5FD;
+            --code-bg: #1F2937;
+        }
+        
+        /* 基础响应式样式 */
+        body {
+            background: linear-gradient(to bottom right, var(--bg-gradient-from), var(--bg-gradient-to));
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+        
+        header {
+            background-color: var(--header-bg);
+            box-shadow: 0 2px 4px var(--shadow-color);
+            position: relative;
+            padding: 1rem 0;
+        }
+        
+        header h1 {
+            color: var(--header-text);
+            font-size: clamp(1.5rem, 4vw, 2.25rem);
+            padding: 0 1rem;
+        }
+        
+        #content-area {
+            background-color: var(--content-bg);
+            box-shadow: 0 2px 8px var(--shadow-color);
+            color: var(--text-color);
+            padding: 1.25rem;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 100%;
+            border-radius: 0.5rem;
+        }
+
+        /* 响应式网格布局 */
+        #day-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr));
+            gap: 0.5rem;
+            padding: 0 1rem;
+            margin: 0 auto 2rem;
+            max-width: 100%;
+        }
+
+        .day-button {
+            background-color: var(--button-bg);
+            color: white;
+            border: none;
+            border-radius: 0.25rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+            min-width: 3rem;
+            aspect-ratio: 1/1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .day-button:hover {
+            background-color: var(--button-hover);
+        }
+
+        .day-button:active {
+            transform: scale(0.95);
+        }
+
+        .day-button.active {
+            background-color: var(--button-active);
+            box-shadow: 0 0 0 2px var(--button-hover);
+        }
+
+        /* 主题切换按钮优化 */
+        .theme-toggle {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 2.5rem;
+            height: 2.5rem;
+            padding: 0;
+            border-radius: 50%;
+            background-color: var(--button-bg);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: none;
+            z-index: 100;
+        }
+
+        /* Markdown 内容响应式优化 */
+        #content-area {
+            font-size: clamp(1rem, 2.5vw, 1.1rem);
+            line-height: 1.6;
+        }
+
+        #content-area img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem auto;
+            display: block;
+        }
+
+        #content-area pre {
+            overflow-x: auto;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0.25rem;
+        }
+
+        #content-area table {
+            display: block;
+            overflow-x: auto;
+            white-space: nowrap;
+            margin: 1rem 0;
+        }
+
+        /* 加载指示器优化 */
+        #loading-indicator {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* 响应式断点优化 */
+        @media (max-width: 640px) {
+            #day-selector {
+                grid-template-columns: repeat(auto-fill, minmax(2.5rem, 1fr));
+                gap: 0.25rem;
+            }
+
+            .day-button {
+                min-width: 2.5rem;
+                font-size: 0.875rem;
+                padding: 0.25rem;
+            }
+
+            header h1 {
+                font-size: 1.25rem;
+            }
+
+            #content-area {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            #day-selector {
+                grid-template-columns: repeat(auto-fill, minmax(2rem, 1fr));
+            }
+
+            .day-button {
+                min-width: 2rem;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="font-bold text-center">
+            三十天学英语：英语学习其实很简单
+        </h1>
+        <button id="theme-toggle" class="theme-toggle" aria-label="切换主题">
+            <i class="fas fa-sun"></i>
+        </button>
+    </header>
+
+    <main class="flex-grow px-4 py-4 max-w-6xl mx-auto w-full">
+        <section aria-labelledby="day-select-heading">
+            <h2 id="day-select-heading" class="text-lg font-semibold mb-4 text-center">
+                <img src="48.png" alt="选择图标" style="display: inline-block; vertical-align: middle; margin-right: 8px;">选择学习哪一天:
+            </h2>
+            <div id="day-selector">
+                 <!-- Day buttons will be generated here by JavaScript -->
+            </div>
+        </section>
+        <section aria-live="polite">
+            <div id="loading-indicator">
+                <div class="animate-pulse">加载中...</div>
+            </div>
+            <div id="content-area" class="min-h-[200px]">
+                <p>在上方选择你要学习的内容，如果打开有报错或无法打开的情况，那一定是还没有上传相应的内容，请耐心等待。</p>
+                <br>
+                <br>
+                <p><span class="font-bold  text-xl">PS:想说好英语，重在养成语感。如果能熟练的读出来，不妨把它背下来，这会成为熟练说好英语的基石！</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 mt-4 text-sm text-center bg-opacity-50">
+        三十天学英语：英语学习其实很简单 | 版权所有 风清扬
+    </footer>
+
+    <script>
+        // 优化后的JavaScript保持不变
+        const daySelector = document.getElementById('day-selector');
+        const contentArea = document.getElementById('content-area');
+        const loadingIndicator = document.getElementById('loading-indicator');
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = themeToggleBtn.querySelector('i');
+        const totalDays = 30;
+        let activeButton = null;
+        
+        // Theme Toggle Functionality
+        function setTheme(isDark) {
+            if (isDark) {
+                document.documentElement.classList.add('dark');
+                document.documentElement.classList.remove('light');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            } else {
+                document.documentElement.classList.add('light');
+                document.documentElement.classList.remove('dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            }
+            localStorage.setItem('darkTheme', isDark);
+        }
+        
+        // 加载主题偏好
+        function loadThemePreference() {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const storedTheme = localStorage.getItem('darkTheme');
+            
+            if (storedTheme === 'true' || (storedTheme === null && prefersDark)) {
+                setTheme(true);
+            } else {
+                setTheme(false);
+            }
+        }
+        
+        themeToggleBtn.addEventListener('click', () => {
+            const isDarkTheme = document.documentElement.classList.contains('dark');
+            setTheme(!isDarkTheme);
+        });
+        
+        // 初始加载主题
+        loadThemePreference();
+
+        // 加载每日内容
+        async function loadDayContent(day) {
+            const filePath = `days/day${day}.md`;
+            contentArea.innerHTML = '';
+            contentArea.style.display = 'none';
+            loadingIndicator.style.display = 'block';
+
+            try {
+                const response = await fetch(filePath);
+                if (!response.ok) throw new Error(`文件未找到: ${filePath}`);
+                
+                const markdownText = await response.text();
+                marked.setOptions({ gfm: true, breaks: true });
+                contentArea.innerHTML = marked.parse(markdownText);
+            } catch (error) {
+                console.error('加载内容失败:', error);
+                contentArea.innerHTML = `
+                    <p class="text-sm opacity-75">${error.message}</p>
+                    <p class="mt-2">请检查文件 <code>${filePath}</code> 是否存在。</p>
+                `;
+            } finally {
+                loadingIndicator.style.display = 'none';
+                contentArea.style.display = 'block';
+            }
+        }
+
+        // 生成每日按钮
+        for (let i = 1; i <= totalDays; i++) {
+            const button = document.createElement('button');
+            button.textContent = i;
+            button.dataset.day = i;
+            button.className = 'day-button';
+            button.ariaLabel = `加载第 ${i} 天内容`;
+
+            button.addEventListener('click', (e) => {
+                if (activeButton) activeButton.classList.remove('active');
+                e.target.classList.add('active');
+                activeButton = e.target;
+                loadDayContent(e.target.dataset.day);
+            });
+
+            daySelector.appendChild(button);
+        }
+    </script>
+</body>
+</html>
