@@ -36,7 +36,7 @@ Tom: Oh come on, give it a try. I’ll bet you won’t be able to tear yourself 
 <audio src="/audio/class9/09-02-01-02.mp3" controls="true"></audio>
 (3) Do you like meeting people? 你喜欢同人们接触吗？
 <audio src="/audio/class9/09-02-01-03.mp3" controls="true"></audio>
-(4) Do you enjoy having a summer holiday on the beatch? 你喜欢到海滨度暑假吗？
+(4) Do you enjoy having a summer holiday on the beach? 你喜欢到海滨度暑假吗？
 <audio src="/audio/class9/09-02-01-04.mp3" controls="true"></audio>
 
 2、表示喜欢
