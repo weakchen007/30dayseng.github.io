@@ -1,4 +1,4 @@
-# 第七条 肯定与不肯定（Certainty and Uncertainty）
+# 第七天 肯定与不肯定（Certainty and Uncertainty）
 
 ## 一、会话
 
