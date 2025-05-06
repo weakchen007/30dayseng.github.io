@@ -13,7 +13,7 @@ B: It’s possible flu, but I thought I’d better see you.可能是流感，但
 A: Quite right. Now, let me have a look at you. If you could slip off your coat and blouse, I’d like to listen to your chest. Sit straight up. Cross your arms. That’s it. Now breathe in. A deep breath. That’s it. Cough. Now again. Sit up. Fine. That’s all, now, you slip on your blouse again. 很对。那，让我来看看你。如果你能脱掉外套和女式上衣，我想听听你的胸部。挺直坐着。把双臂交叉。就是这样。现在吸气。做个深呼吸。就这样。咳嗽。再来一次。坐直。好了。行了，现在再把女式上衣穿上。
 B: My eyes have been sore and painful, Doctor. 我的眼睛一直又痛又难受，医生。
 A: Have they? Now I’ll just take your temperature. Just put it under your tongue. That’s it.是吗？那我现在量下你的体温。把它放在舌头下面。好了。
-(After a while)
+(After a while)过了一会
 A: Now, let me have a look. It is a bit high. Now, I want to examine your throat. Open wide. Say“Ah”.现在，我来看看。有点高。现在，我想检查下你的喉咙。张嘴。说“啊”。
 B: Aaaaahh, Aaaaaahh.啊——啊——。
 A: Yes, t does look a bit sore. But there’s nothing to be alarmed about. A slight infection. You’d better have a couple of days in bed. 嗯，看起来有点红肿。但不必太担心。有点感染。你最好卧床休息两天。
