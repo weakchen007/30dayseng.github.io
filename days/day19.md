@@ -184,5 +184,5 @@ Jim: Come this way, please. Here’s the lift. 请这边走。这是电梯。
 |laundry bag<audio src="/audio/class19/19-02-02-97.mp3" controls="true"></audio>|洗衣袋|toilet paper<audio src="/audio/class19/19-02-02-98.mp3" controls="true"></audio>|手纸|
 |the key to the room<audio src="/audio/class19/19-02-02-99.mp3" controls="true"></audio>|房门钥匙|to have…polished<audio src="/audio/class19/19-02-02-100.mp3" controls="true"></audio>|把擦一下|
 |to have…ironed<audio src="/audio/class19/19-02-02-101.mp3" controls="true"></audio>|把熨一下|to have…dry-cleaned<audio src="/audio/class19/19-02-02-102.mp3" controls="true"></audio>|把干洗一下|
-|to check in<audio src="/audio/class19/19-02-02-103.mp3" controls="true"></audio>|办理住宿登记手续|to check out|<audio src="/audio/class19/19-02-02-104.mp3" controls="true"></audio>付帐离开旅馆|
+|to check in<audio src="/audio/class19/19-02-02-103.mp3" controls="true"></audio>|办理住宿登记手续|to check out|<audio src="/audio/class19/19-02-02-104.mp3" controls="true"></audio>|付帐离开旅馆|
 
