@@ -5,90 +5,127 @@
 对话1(Dialogue1)
 
 A: How do you do, sir?您好，先生。
+<audio src="/audio/class18/18-01-01-01.mp3" controls="true"></audio>
 B: Have you a table for two?两位，有桌子吗？
+<audio src="/audio/class18/18-01-01-02.mp3" controls="true"></audio>
 A: Yes, sir, this way, please.有的，先生，这边请。
+<audio src="/audio/class18/18-01-01-03.mp3" controls="true"></audio>
 B: Thank you.谢谢。
+<audio src="/audio/class18/18-01-01-04.mp3" controls="true"></audio>
 C: Have you a menu?有菜单吗？
+<audio src="/audio/class18/18-01-01-05.mp3" controls="true"></audio>
 A: Yes, sir.有，先生
+<audio src="/audio/class18/18-01-01-06.mp3" controls="true"></audio>
 C: (To B) Well, what are you going to have? 哦，那你要点什么？
+<audio src="/audio/class18/18-01-01-07.mp3" controls="true"></audio>
 B: How about you?你呢？
+<audio src="/audio/class18/18-01-01-08.mp3" controls="true"></audio>
 C: I’ll have hamburger steak.我要汉堡牛排。
+<audio src="/audio/class18/18-01-01-09.mp3" controls="true"></audio>
 B: Think I’ll have ham and eggs.我要火腿蛋。
+<audio src="/audio/class18/18-01-01-10.mp3" controls="true"></audio>
 A: A hamburger steak and ham and eggs? Thank you.汉堡牛排和火腿蛋？好的。
+<audio src="/audio/class18/18-01-01-11.mp3" controls="true"></audio>
 B: What’ll we have to drink? 我们喝点什么？
+<audio src="/audio/class18/18-01-01-12.mp3" controls="true"></audio>
 C: What do you say we have some beer? 要不要喝点啤酒？
+<audio src="/audio/class18/18-01-01-13.mp3" controls="true"></audio>
 (To W) A bottle of beer, with two glasses, and some cheese and crackers, please.请来一瓶啤酒，两只杯子，还有点奶酪和饼干。
+<audio src="/audio/class18/18-01-01-14.mp3" controls="true"></audio>
 B: It’s quite a nice restaurant, isn’t it?这家餐厅真不错，不是吗？
+<audio src="/audio/class18/18-01-01-15.mp3" controls="true"></audio>
 C: It certainly is. Do you come here often?的确是。你常来这里吗？
+<audio src="/audio/class18/18-01-01-16.mp3" controls="true"></audio>
 B: Yes, very often.是的，经常来。
+<audio src="/audio/class18/18-01-01-17.mp3" controls="true"></audio>
 
 对话2(Dialogue2)
 
 A: Can you manage chopsticks or would you rather have a knife and fork?您能用筷子吗？还是想用刀叉？
+<audio src="/audio/class18/18-01-02-01.mp3" controls="true"></audio>
 B: I’d like to try chopsticks. Would you teach me how to hold them?我想试试筷子。您能教教我该怎么拿吗？
+<audio src="/audio/class18/18-01-02-01.mp3" controls="true"></audio>
 A: (Demonstrates) You hold them slightly apart between your thumb and forefinger, pressed against the side of your middle finger as if you were holding a pencil. To pick up food, you press your forefinger against the upper chopstick and they will close in a pincer-like movement, like this.（示范）您把筷子稍微分开，用拇指和食指捏住，用中指的侧面抵住它们，就像您拿铅笔一样。要取食物时，您用食指按压上方的筷子，它们就会像钳子一样夹紧食物，就像这样。
+<audio src="/audio/class18/18-01-02-03.mp3" controls="true"></audio>
 B: (Imitating) There, how’s this?模仿）这样，怎么样？
+<audio src="/audio/class18/18-01-02-04.mp3" controls="true"></audio>
 A: Splendid.太棒了。
+<audio src="/audio/class18/18-01-02-05.mp3" controls="true"></audio>
 
 二、常用表达法
 
 1、句子
 
 (1) Let me know as soon as breakfast (or lunch, or dinner) is ready.早餐（或午餐、晚餐）准备好了的时候，马上告诉我。
+<audio src="/audio/class18/18-02-01-01.mp3" controls="true"></audio>
 (2) What time shall I have breakfast (or lunch, or dinner)?我什么时候可以吃早餐（或午餐、晚餐）？
+<audio src="/audio/class18/18-02-01-02.mp3" controls="true"></audio>
 (3) Let’s go down to the dining room.我们下楼去餐厅吧
+<audio src="/audio/class18/18-02-01-03.mp3" controls="true"></audio>
 (4) I’ll have toast and coffee for breakfast.我们早餐吃烤面包和咖啡。
+<audio src="/audio/class18/18-02-01-04.mp3" controls="true"></audio>
 (5) Sorry, all the tables and engaged.对不起，所有的桌子全都满座了。
+<audio src="/audio/class18/18-02-01-05.mp3" controls="true"></audio>
 (6) Let me have the bill, please.请把帐单给我。
+<audio src="/audio/class18/18-02-01-06.mp3" controls="true"></audio>
 (7) It comes to thirty dollars.共是三十元。
+<audio src="/audio/class18/18-02-01-07.mp3" controls="true"></audio>
 (8) Please come again.请再光临。
+<audio src="/audio/class18/18-02-01-08.mp3" controls="true"></audio>
 (9) How do you like this salad?你觉得这沙拉怎么样？
+<audio src="/audio/class18/18-02-01-09.mp3" controls="true"></audio>
 (10) You are very good at cooking.你的烹调非常好。
+<audio src="/audio/class18/18-02-01-10.mp3" controls="true"></audio>
 (11) I’ll take you to a Chinese restaurant one of these days.最近我要带你到一家中国餐馆去尝尝。
+<audio src="/audio/class18/18-02-01-11.mp3" controls="true"></audio>
 (12) I shall look forward to going with you.我期待同你一起去。
+<audio src="/audio/class18/18-02-01-12.mp3" controls="true"></audio>
 (13) Don’t stand on ceremony不要拘束。
+<audio src="/audio/class18/18-02-01-13.mp3" controls="true"></audio>
 (14) Give me tea with lemon and sugar, please.请给我柠檬茶和糖。
+<audio src="/audio/class18/18-02-01-14.mp3" controls="true"></audio>
 (15) I like my coffee black.我喜欢纯咖啡（不加奶和糖）。
+<audio src="/audio/class18/18-02-01-09.mp3" controls="true"></audio>
 
 2、常用词汇和短语
 
 |英文|中文|英文|中文|
 |----|----|----|----|
-|cabbage(Chinese cabbage)|圆白菜（大白菜）|hot pickled mustard greens|榨菜|
-|spinach|菠菜|rape|油菜|
-|cauliflower|菜花|egg plant|茄子|
-|celery|芹菜|potato|土豆|
-|carrot|胡萝卜|tomato|西红柿|
-|radish|小萝卜|turnip|萝卜|
-|cucumber|黄瓜|string beans|菜豆|
-|French beans|扁豆|broad beans|蚕豆|
-|peas|豌豆|marrow|冬瓜|
-|bamboo shoots|竹笋|fungus|木耳|
-|dried lily|黄花菜|lotus root|藕|
-|mushrooms|蘑菇|onions(spring ~)|洋葱(小葱)|
-|leeks|韭菜|garlic|大蒜|
-|ginger|姜|lichee|荔枝|
-|longan|龙眼，桂圆|orange|橙子，广柑|
-|tangerine|桔子|lemon柠檬|
-|(grapefruit) pomelo|柚子|apple|苹果|
-|pear|梨|apricot|杏|
-|peach|桃|plum|梅子|
-|cherry|樱桃|strawberry|草莓|
-|loquat|琵琶|banana|香蕉|
-|pineapple|菠萝|olive|橄榄|
-|fig|无花果|date|枣子|
-|grape|葡萄|persimmon|柿子|
-|pomegranate|石榴|haw|山楂|
-|watermelon|西瓜|preserved fruit|蜜饯|
-|toffee haws|糖葫芦|meat( balls, slices)|肉(丸子，片)|
-|minced meat|肉末|sausage|香肠|
-|ham|火腿|cold meats|凉肉拼盘|
-|bacon|腌肉|game|野味|
-|pork|猪肉|beef|牛肉|
-|veal|小牛肉|mutton|羊肉|
-|liver|肝|kidneys|腰|
-|tripe|肚|giblets|鸡(鸭)杂|
-|gizzard|鸡(鸭)肫|duck’s web|鸭掌|
+|cabbage(Chinese cabbage)<audio src="/audio/class18/18-02-02-01.mp3" controls="true"></audio>|圆白菜（大白菜）|hot pickled mustard greens<audio src="/audio/class18/18-02-02-02.mp3" controls="true"></audio>|榨菜|
+|spinach<audio src="/audio/class18/18-02-02-03.mp3" controls="true"></audio>|菠菜|rape<audio src="/audio/class18/18-02-02-04.mp3" controls="true"></audio>|油菜|
+|cauliflower<audio src="/audio/class18/18-02-02-05.mp3" controls="true"></audio>|菜花|egg plant<audio src="/audio/class18/18-02-02-06.mp3" controls="true"></audio>|茄子|
+|celery<audio src="/audio/class18/18-02-02-07.mp3" controls="true"></audio>|芹菜|potato<audio src="/audio/class18/18-02-02-08.mp3" controls="true"></audio>|土豆|
+|carrot<audio src="/audio/class18/18-02-02-09.mp3" controls="true"></audio>|胡萝卜|tomato<audio src="/audio/class18/18-02-02-10.mp3" controls="true"></audio>|西红柿|
+|radish<audio src="/audio/class18/18-02-02-11.mp3" controls="true"></audio>|小萝卜|turnip<audio src="/audio/class18/18-02-02-12.mp3" controls="true"></audio>|萝卜|
+|cucumber<audio src="/audio/class18/18-02-02-13.mp3" controls="true"></audio>|黄瓜|string beans<audio src="/audio/class18/18-02-02-14.mp3" controls="true"></audio>|菜豆|
+|French beans<audio src="/audio/class18/18-02-02-15.mp3" controls="true"></audio>|扁豆|broad beans<audio src="/audio/class18/18-02-02-16.mp3" controls="true"></audio>|蚕豆|
+|peas<audio src="/audio/class18/18-02-02-17.mp3" controls="true"></audio>|豌豆|marrow<audio src="/audio/class18/18-02-02-18.mp3" controls="true"></audio>|冬瓜|
+|bamboo shoots<audio src="/audio/class18/18-02-02-19.mp3" controls="true"></audio>|竹笋|fungus<audio src="/audio/class18/18-02-02-20.mp3" controls="true"></audio>|木耳|
+|dried lily<audio src="/audio/class18/18-02-02-21.mp3" controls="true"></audio>|黄花菜|lotus root<audio src="/audio/class18/18-02-02-22.mp3" controls="true"></audio>|藕|
+|mushrooms<audio src="/audio/class18/18-02-02-23.mp3" controls="true"></audio>|蘑菇|onions(spring ~)<audio src="/audio/class18/18-02-02-24.mp3" controls="true"></audio>|洋葱(小葱)|
+|leeks<audio src="/audio/class18/18-02-02-25.mp3" controls="true"></audio>|韭菜|garlic<audio src="/audio/class18/18-02-02-26.mp3" controls="true"></audio>|大蒜|
+|ginger<audio src="/audio/class18/18-02-02-27.mp3" controls="true"></audio>|姜|lichee<audio src="/audio/class18/18-02-02-28.mp3" controls="true"></audio>|荔枝|
+|longan<audio src="/audio/class18/18-02-02-29.mp3" controls="true"></audio>|龙眼，桂圆|orange<audio src="/audio/class18/18-02-02-30.mp3" controls="true"></audio>|橙子，广柑|
+|tangerine<audio src="/audio/class18/18-02-02-31.mp3" controls="true"></audio>|桔子|lemon<audio src="/audio/class18/18-02-02-32.mp3" controls="true"></audio>|柠檬|
+|(grapefruit)pomelo<audio src="/audio/class18/18-02-02-33.mp3" controls="true"></audio>|柚子|apple<audio src="/audio/class18/18-02-02-34.mp3" controls="true"></audio>|苹果|
+|pear<audio src="/audio/class18/18-02-02-35.mp3" controls="true"></audio>|梨|apricot<audio src="/audio/class18/18-02-02-36.mp3" controls="true"></audio>|杏|
+|peach<audio src="/audio/class18/18-02-02-37.mp3" controls="true"></audio>|桃|plum<audio src="/audio/class18/18-02-02-38.mp3" controls="true"></audio>|梅子|
+|cherry<audio src="/audio/class18/18-02-02-39.mp3" controls="true"></audio>|樱桃|strawberry<audio src="/audio/class18/18-02-02-40.mp3" controls="true"></audio>|草莓|
+|loquat<audio src="/audio/class18/18-02-02-41.mp3" controls="true"></audio>|琵琶|banana<audio src="/audio/class18/18-02-02-42.mp3" controls="true"></audio>|香蕉|
+|pineapple<audio src="/audio/class18/18-02-02-43.mp3" controls="true"></audio>|菠萝|olive<audio src="/audio/class18/18-02-02-44.mp3" controls="true"></audio>|橄榄|
+|fig<audio src="/audio/class18/18-02-02-45.mp3" controls="true"></audio>|无花果|date<audio src="/audio/class18/18-02-02-46.mp3" controls="true"></audio>|枣子|
+|grape<audio src="/audio/class18/18-02-02-47.mp3" controls="true"></audio>|葡萄|persimmon<audio src="/audio/class18/18-02-02-48.mp3" controls="true"></audio>|柿子|
+|pomegranate<audio src="/audio/class18/18-02-02-49.mp3" controls="true"></audio>|石榴|haw<audio src="/audio/class18/18-02-02-50.mp3" controls="true"></audio>|山楂|
+|watermelon<audio src="/audio/class18/18-02-02-51.mp3" controls="true"></audio>|西瓜|preserved fruit<audio src="/audio/class18/18-02-02-52.mp3" controls="true"></audio>|蜜饯|
+|toffee haws<audio src="/audio/class18/18-02-02-53.mp3" controls="true"></audio>|糖葫芦|meat( balls, slices)<audio src="/audio/class18/18-02-02-54.mp3" controls="true"></audio>|肉(丸子，片)|
+|minced meat<audio src="/audio/class18/18-02-02-55.mp3" controls="true"></audio>|肉末|sausage<audio src="/audio/class18/18-02-02-56.mp3" controls="true"></audio>|香肠|
+|ham<audio src="/audio/class18/18-02-02-57.mp3" controls="true"></audio>|火腿|cold meats<audio src="/audio/class18/18-02-02-58.mp3" controls="true"></audio>|凉肉拼盘|
+|bacon<audio src="/audio/class18/18-02-02-59.mp3" controls="true"></audio>|腌肉|game<audio src="/audio/class18/18-02-02-60.mp3" controls="true"></audio>|野味|
+|pork<audio src="/audio/class18/18-02-02-61.mp3" controls="true"></audio>|猪肉|beef<audio src="/audio/class18/18-02-02-62.mp3" controls="true"></audio>|牛肉|
+|veal<audio src="/audio/class18/18-02-02-63.mp3" controls="true"></audio>|小牛肉|mutton<audio src="/audio/class18/18-02-02-64.mp3" controls="true"></audio>|羊肉|
+|liver<audio src="/audio/class18/18-02-02-65.mp3" controls="true"></audio>|肝|kidneys<audio src="/audio/class18/18-02-02-66.mp3" controls="true"></audio>|腰|
+|tripe<audio src="/audio/class18/18-02-02-67.mp3" controls="true"></audio>|肚|giblets<audio src="/audio/class18/18-02-02-68.mp3" controls="true"></audio>|鸡(鸭)杂|
+|gizzard<audio src="/audio/class18/18-02-02-69.mp3" controls="true"></audio>|鸡(鸭)肫|duck’s web<audio src="/audio/class18/18-02-02-70.mp3" controls="true"></audio>|鸭掌|
 |scallops|干贝|turtle|甲鱼|
 |tangie,kelp|海带|carp(silver carp)|鲤鱼(鲫鱼)|
 |yellow croaker|黄花鱼|belt fish|带鱼|
