@@ -145,7 +145,7 @@ Jim: Come this way, please. Here’s the lift. 请这边走。这是电梯。
 |bar<audio src="/audio/class19/19-02-02-19.mp3" controls="true"></audio>|酒吧间|buffet<audio src="/audio/class19/19-02-02-20.mp3" controls="true"></audio>|(餐厅的)小卖部|
 |postal service<audio src="/audio/class19/19-02-02-21.mp3" controls="true"></audio>|邮政服务处|newsstand<audio src="/audio/class19/19-02-02-22.mp3" controls="true"></audio>|售报处|
 |shop<audio src="/audio/class19/19-02-02-23.mp3" controls="true"></audio>|商店|manager<audio src="/audio/class19/19-02-02-24.mp3" controls="true"></audio>|经理|
-|door-man|<audio src="/audio/class19/19-02-02-25.mp3" controls="true"></audio>|门口服务员|porter<audio src="/audio/class19/19-02-02-26.mp3" controls="true"></audio>|搬行李的服务员|
+|door-man<audio src="/audio/class19/19-02-02-25.mp3" controls="true"></audio>|门口服务员|porter<audio src="/audio/class19/19-02-02-26.mp3" controls="true"></audio>|搬行李的服务员|
 |maid<audio src="/audio/class19/19-02-02-27.mp3" controls="true"></audio>|打扫房间服务员|desk-cerk<audio src="/audio/class19/19-02-02-28.mp3" controls="true"></audio>|服务台工作人员|
 |attendant<audio src="/audio/class19/19-02-02-29.mp3" controls="true"></audio>|(旅馆)服务员|waiter(waitress)<audio src="/audio/class19/19-02-02-30.mp3" controls="true"></audio>|男(女)服务员|
 |(shop)assistant<audio src="/audio/class19/19-02-02-31.mp3" controls="true"></audio>|商店售货员|clerk<audio src="/audio/class19/19-02-02-32.mp3" controls="true"></audio>|邮局银行）工作人员|
@@ -184,5 +184,5 @@ Jim: Come this way, please. Here’s the lift. 请这边走。这是电梯。
 |laundry bag<audio src="/audio/class19/19-02-02-97.mp3" controls="true"></audio>|洗衣袋|toilet paper<audio src="/audio/class19/19-02-02-98.mp3" controls="true"></audio>|手纸|
 |the key to the room<audio src="/audio/class19/19-02-02-99.mp3" controls="true"></audio>|房门钥匙|to have…polished<audio src="/audio/class19/19-02-02-100.mp3" controls="true"></audio>|把擦一下|
 |to have…ironed<audio src="/audio/class19/19-02-02-101.mp3" controls="true"></audio>|把熨一下|to have…dry-cleaned<audio src="/audio/class19/19-02-02-102.mp3" controls="true"></audio>|把干洗一下|
-|to check in<audio src="/audio/class19/19-02-02-103.mp3" controls="true"></audio>|办理住宿登记手续|to check out|<audio src="/audio/class19/19-02-02-104.mp3" controls="true"></audio>|付帐离开旅馆|
+|to check in<audio src="/audio/class19/19-02-02-103.mp3" controls="true"></audio>|办理住宿登记手续|to check out<audio src="/audio/class19/19-02-02-104.mp3" controls="true"></audio>|付帐离开旅馆|
 
