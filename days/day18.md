@@ -152,7 +152,7 @@ A: Splendid.太棒了。
 |milk<audio src="/audio/class18/18-02-02-117.mp3" controls="true"></audio>|牛奶|sour milk<audio src="/audio/class18/18-02-02-118.mp3" controls="true"></audio>|酸奶|
 |cocoa<audio src="/audio/class18/18-02-02-119.mp3" controls="true"></audio>|可口|cocktail<audio src="/audio/class18/18-02-02-120.mp3" controls="true"></audio>|鸡尾酒|
 |whiskey(whisky)<audio src="/audio/class18/18-02-02-121.mp3" controls="true"></audio>|威士忌酒|brandy<audio src="/audio/class18/18-02-02-122.mp3" controls="true"></audio>|白兰地酒|
-|gin|杜松子酒<audio src="/audio/class18/18-02-02-123.mp3" controls="true"></audio>|champagn<audio src="/audio/class18/18-02-02-124.mp3" controls="true"></audio>e|香槟酒|
+|gin<audio src="/audio/class18/18-02-02-123.mp3" controls="true"></audio>|杜松子酒|champagn<audio src="/audio/class18/18-02-02-124.mp3" controls="true"></audio>e|香槟酒|
 |red wine<audio src="/audio/class18/18-02-02-125.mp3" controls="true"></audio>|红葡萄酒|yellow wine<audio src="/audio/class18/18-02-02-126.mp3" controls="true"></audio>|黄酒|
 |liquor<audio src="/audio/class18/18-02-02-127.mp3" controls="true"></audio>|烈性酒|liqueur<audio src="/audio/class18/18-02-02-128.mp3" controls="true"></audio>|烈性酒|
 |aperitif<audio src="/audio/class18/18-02-02-129.mp3" controls="true"></audio>|开胃酒(饭前喝)|beer<audio src="/audio/class18/18-02-02-130.mp3" controls="true"></audio>|啤酒|
