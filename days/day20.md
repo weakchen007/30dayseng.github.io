@@ -99,7 +99,7 @@ B: Thank you, Doctor. Good-bye. 谢谢您，医生。再见。
 |soft diet<audio src="/audio/class20/20-02-02-57.mp3" controls="true"></audio>|软食|to diagnose<audio src="/audio/class20/20-02-02-58.mp3" controls="true"></audio>|诊断|
 |case history; medical record<audio src="/audio/class20/20-02-02-59.mp3" controls="true"></audio>|病例|to ask for sick leave<audio src="/audio/class20/20-02-02-60.mp3" controls="true"></audio>|请病假|
 |certificate for sick leave<audio src="/audio/class20/20-02-02-61.mp3" controls="true"></audio>|病假条|to take one’s temperature<audio src="/audio/class20/20-02-02-62.mp3" controls="true"></audio>|给某人测体温|
-|to make one’s blood pressure; to have one’s blood pressure taken<audio src="/audio/class20/20-02-02-63.mp3" controls="true"></audio>|量血压|to take things easy<audio src="/audio/class20/20-02-02-64.mp3" controls="true"></audio>|不要过分紧张|
+|to make one’s blood pressure<audio src="/audio/class20/20-02-02-63.mp3" controls="true"></audio>|量血压|to take things easy<audio src="/audio/class20/20-02-02-64.mp3" controls="true"></audio>|不要过分紧张|
 |to feel one’s pulse<audio src="/audio/class20/20-02-02-65.mp3" controls="true"></audio>|把脉|to examine one’s chest<audio src="/audio/class20/20-02-02-66.mp3" controls="true"></audio>|听心肺|
 |to have X-ray; to be X-ray<audio src="/audio/class20/20-02-02-67.mp3" controls="true"></audio>|胸部透视|to be not feeling very well<audio src="/audio/class20/20-02-02-68.mp3" controls="true"></audio>|感到身体不大舒服|
 |to have a blood(stool, urine) test<audio src="/audio/class20/20-02-02-69.mp3" controls="true"></audio>|验血(大便，小便)|to be indisposed; to suffer from a slight indisposition<audio src="/audio/class20/20-02-02-70.mp3" controls="true"></audio>|身体不大舒服|
