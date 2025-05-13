@@ -102,11 +102,11 @@ B: Thank you, Doctor. Good-bye. 谢谢您，医生。再见。
 |to make one’s blood pressure<audio src="/audio/class20/20-02-02-63.mp3" controls="true"></audio>|量血压|to take things easy<audio src="/audio/class20/20-02-02-64.mp3" controls="true"></audio>|不要过分紧张|
 |to feel one’s pulse<audio src="/audio/class20/20-02-02-65.mp3" controls="true"></audio>|把脉|to examine one’s chest<audio src="/audio/class20/20-02-02-66.mp3" controls="true"></audio>|听心肺|
 |to have X-ray; to be X-ray<audio src="/audio/class20/20-02-02-67.mp3" controls="true"></audio>|胸部透视|to be not feeling very well<audio src="/audio/class20/20-02-02-68.mp3" controls="true"></audio>|感到身体不大舒服|
-|to have a blood(stool, urine) test<audio src="/audio/class20/20-02-02-69.mp3" controls="true"></audio>|验血(大便，小便)|to be indisposed; to suffer from a slight indisposition<audio src="/audio/class20/20-02-02-70.mp3" controls="true"></audio>|身体不大舒服|
+|to have a blood(stool, urine) test<audio src="/audio/class20/20-02-02-69.mp3" controls="true"></audio>|验血(大便，小便)|to be indisposed<audio src="/audio/class20/20-02-02-70.mp3" controls="true"></audio>|身体不大舒服|
 |to have a general check up<audio src="/audio/class20/20-02-02-71.mp3" controls="true"></audio>|全身体格检查|splitting headache<audio src="/audio/class20/20-02-02-72.mp3" controls="true"></audio>|强烈的头痛|
 |to be up and about<audio src="/audio/class20/20-02-02-73.mp3" controls="true"></audio>|痊愈|to feel sick(to feel nausea)<audio src="/audio/class20/20-02-02-74.mp3" controls="true"></audio>|恶心|
 |to vomit(to throw up)<audio src="/audio/class20/20-02-02-75.mp3" controls="true"></audio>|呕吐|My temperature is normal<audio src="/audio/class20/20-02-02-76.mp3" controls="true"></audio>|我体温正常|
-|to have(run) a fever (temperature)<audio src="/audio/class20/20-02-02-77.mp3" controls="true"></audio>|发烧|to have a toothache (headache,sorethroat)<audio src="/audio/class20/20-02-02-78.mp3" controls="true"></audio>|牙(头，嗓子)痛|
+|to have(run) a fever (temperature)<audio src="/audio/class20/20-02-02-77.mp3" controls="true"></audio>|发烧|to have a toothache(headache,sorethroat)<audio src="/audio/class20/20-02-02-78.mp3" controls="true"></audio>|牙(头，嗓子)痛|
 |to bring down the fever(temperature)<audio src="/audio/class20/20-02-02-79.mp3" controls="true"></audio>|使退烧|to have a tooth out (extracted)<audio src="/audio/class20/20-02-02-80.mp3" controls="true"></audio>|拔牙|
 |too far gone<audio src="/audio/class20/20-02-02-81.mp3" controls="true"></audio>|指牙蛀得太厉害|to have a tooth filled<audio src="/audio/class20/20-02-02-82.mp3" controls="true"></audio>|补牙|
 |acupuncture and moxibustion<audio src="/audio/class20/20-02-02-83.mp3" controls="true"></audio>|针灸|to recover without any after-effect<audio src="/audio/class20/20-02-02-84.mp3" controls="true"></audio>|痊愈不留后遗症|
