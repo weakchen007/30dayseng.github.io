@@ -10,7 +10,7 @@ B: Yes, you can have Room 24 on the first floor.有，您可以去一楼的24号
 <audio src="/audio/class19/19-01-01-02.mp3" controls="true"></audio>
 A: What’s the price?价格是多少？
 <audio src="/audio/class19/19-01-01-03.mp3" controls="true"></audio>
-B: $2.9 a night not continue the service. 每晚2.9美元。
+B: $2.9 a night not continue the service. 每晚2.9美元，不能续住。
 <audio src="/audio/class19/19-01-01-04.mp3" controls="true"></audio>
 A: Can I have a look at it, please?我能看看房间吗？请借过。
 <audio src="/audio/class19/19-01-01-05.mp3" controls="true"></audio>
