@@ -68,12 +68,13 @@ B: Thank you, Doctor. Good-bye. 谢谢您，医生。再见。
 2、常用词，词组
 |英文|中文|英文|中文|
 |----|----|----|----|
-|to feel sore all over<audio src="/audio/class20/20-02-02-01.mp3" controls="true"></audio>|全身酸痛|to feel listless<audio src="/audio/class20/20-02-02-02.mp3" controls="true"></audio>|感到没有精神|
-|to have a bad cough<audio src="/audio/class20/20-02-02-03.mp3" controls="true"></audio>|咳得厉害|to have a bad taste in one’s mouth<audio src="/audio/class20/20-02-02-04.mp3" controls="true"></audio>|嘴发苦|
-|to sneeze<audio src="/audio/class20/20-02-02-05.mp3" controls="true"></audio>|打喷嚏|to feel dizzy(faint)<audio src="/audio/class20/20-02-02-06.mp3" controls="true"></audio>|头晕|
-|to sprain one’s ankle<audio src="/audio/class20/20-02-02-07.mp3" controls="true"></audio>|扭了脚|to faint( to lose consciousness; to pass out)<audio src="/audio/class20/20-02-02-08.mp3" controls="true"></audio>|晕倒|
-|to gain(recover) consciousness; to come to<audio src="/audio/class20/20-02-02-09.mp3" controls="true"></audio>|苏醒过来|be delirious(to be in a coma)<audio src="/audio/class20/20-02-02-10.mp3" controls="true"></audio>|昏迷不醒，昏迷乱语|
-|to see(consult) a doctor<audio src="/audio/class20/20-02-02-11.mp3" controls="true"></audio>|看医生，看病|to send for a doctor<audio src="/audio/class20/20-02-02-12.mp3" controls="true"></audio>|请医生|
+|to feel sore all over|全身酸痛|to feel listless|感到没有精神|
+|to have a bad cough|咳得厉害|bitter mouth|嘴发苦|
+|to sneeze|打喷嚏|to feel dizzy(faint)|头晕|
+|to sprain one’s ankle|扭了脚|to faint|晕倒|
+|to lose consciousness|晕倒|to pass out|晕倒|
+|to gain(recover) consciousness; to come to|苏醒过来|be delirious(to be in a coma)|昏迷不醒，昏迷乱语|
+|to see(consult) a doctor|看医生，看病|to send for a doctor|请医生|
 |to register<audio src="/audio/class20/20-02-02-13.mp3" controls="true"></audio>|挂号|consulting hours<audio src="/audio/class20/20-02-02-14.mp3" controls="true"></audio>|门诊时间|
 |first visit (consultation)<audio src="/audio/class20/20-02-02-15.mp3" controls="true"></audio>|初诊|subsequent visit(consultation)<audio src="/audio/class20/20-02-02-16.mp3" controls="true"></audio>|复诊|
 |to make an appointment<audio src="/audio/class20/20-02-02-17.mp3" controls="true"></audio>|预约|case<audio src="/audio/class20/20-02-02-18.mp3" controls="true"></audio>|病例|
