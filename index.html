@@ -357,5 +357,34 @@
         console.log(`Visit Time: ${visitTime}`);
         console.log(`Visit Count: ${visitCount}`);
     </script>
+    <script>
+    // 禁止快捷键：F12、F11、Ctrl+Shift+I、Ctrl+Shift+J、Ctrl+U
+    document.addEventListener('keydown', function(e) {
+    // 禁用 F12
+    if (e.key === 'F12') {
+        e.preventDefault();
+    }
+    // 禁用 F11（全屏）
+    if (e.key === 'F11') {
+        e.preventDefault();
+    }
+    // 禁用 Ctrl+Shift+I
+    if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+        e.preventDefault();
+    }
+    // 禁用 Ctrl+Shift+J
+    if (e.ctrlKey && e.shiftKey && e.key === 'J') {
+        e.preventDefault();
+    }
+    // 禁用 Ctrl+U
+    if (e.ctrlKey && e.key === 'u') {
+        e.preventDefault();
+    }
+    });
+    // 禁用右键菜单
+    document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    });
+    </script>
 </body>
 </html>
